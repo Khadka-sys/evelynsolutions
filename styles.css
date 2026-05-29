@@ -142,17 +142,48 @@ button {
   gap: 1.5rem;
 }
 
-.nav-lang {
-  background: rgba(255, 255, 255, 0.05);
+/* Language and theme toggle buttons - lighter style */
+.nav-lang,
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.15);  /* Lighter background */
+  border: none;
+  color: #ffffff;                         /* White text for dark mode */
   padding: 0.4rem 0.9rem;
   border-radius: 40px;
   font-size: 0.85rem;
   font-weight: 500;
-  transition: var(--transition);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
 }
 
-.nav-lang:hover {
-  background: rgba(255, 255, 255, 0.12);
+/* Theme toggle specific – round and slightly smaller */
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+/* Hover effect */
+.nav-lang:hover,
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Light mode adjustments */
+body.light-mode .nav-lang,
+body.light-mode .theme-toggle {
+  background: rgba(0, 0, 0, 0.08);
+  color: #1a1f2e;                         /* Dark text for light mode */
+}
+body.light-mode .nav-lang:hover,
+body.light-mode .theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .nav-cta {
