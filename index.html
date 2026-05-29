@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Evelynx Solutions — IT & Technology Nepal</title>
+<meta name="description" content="Nepal's premier IT company delivering software, cloud, cybersecurity, and digital transformation from Kathmandu."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="prog"></div>
+
+<!-- ═══ NAV ═══ -->
+<header class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">
+      <svg viewBox="0 0 56 56" fill="none"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="4" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="2" fill="#fff"/></svg>
+    </div>
+    Evelynx
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="why-us.html">Why Us</a>
+  </nav>
+  <div class="nav-right">
+    <button class="nav-lang" id="langBtn">🇳🇵 नेपाली</button>
+    <a href="contact.html" class="nav-cta">Contact us</a>
+  </div>
+  <button class="nav-ham" id="hamBtn"><span></span><span></span><span></span></button>
+</header>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="why-us.html">Why Us</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Nepal's Premier IT Partner — Est. 2024</div>
+    <h1 class="hero-h1">
+      Engineering<br/>
+      <em>Tomorrow's</em><br/>
+      <strong>Technology</strong><br/>
+      Today
+    </h1>
+    <p class="hero-p">World-class software, cloud, and cybersecurity — built for Nepal's businesses, priced for Nepal's market.</p>
+    <div class="hero-actions">
+      <a href="solutions.html" class="btn-dark">Explore Solutions <span class="arr">→</span></a>
+      <a href="contact.html" class="btn-text">Talk to an expert <span class="arr">→</span></a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-n"><span class="count" data-t="50">0</span><sup>+</sup></div>
+        <div class="stat-l">Projects Delivered</div>
+      </div>
+      <div>
+        <div class="stat-n"><span class="count" data-t="30">0</span><sup>+</sup></div>
+        <div class="stat-l">Happy Clients</div>
+      </div>
+      <div>
+        <div class="stat-n"><span class="count" data-t="5">0</span><sup>+</sup></div>
+        <div class="stat-l">Years Experience</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80&auto=format&fit=crop" alt="Technology"/>
+    <div class="hero-overlay"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-icon">🏆</div>
+      <div class="hero-badge-text">
+        <strong>OCR Registered · PAN Holder · SSF Compliant</strong>
+        <p>Fully licensed & legally compliant IT company in Nepal</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TICKER ═══ -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span class="ticker-item">Software Development</span>
+    <span class="ticker-item">Cloud Infrastructure</span>
+    <span class="ticker-item">Cybersecurity</span>
+    <span class="ticker-item">AI & Machine Learning</span>
+    <span class="ticker-item">UI/UX Design</span>
+    <span class="ticker-item">Digital Marketing</span>
+    <span class="ticker-item">IT Consulting</span>
+    <span class="ticker-item">Managed IT Services</span>
+    <span class="ticker-item">Mobile App Development</span>
+    <span class="ticker-item">IT Hardware & Support</span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item">Software Development</span>
+    <span class="ticker-item">Cloud Infrastructure</span>
+    <span class="ticker-item">Cybersecurity</span>
+    <span class="ticker-item">AI & Machine Learning</span>
+    <span class="ticker-item">UI/UX Design</span>
+    <span class="ticker-item">Digital Marketing</span>
+    <span class="ticker-item">IT Consulting</span>
+    <span class="ticker-item">Managed IT Services</span>
+    <span class="ticker-item">Mobile App Development</span>
+    <span class="ticker-item">IT Hardware & Support</span>
+  </div>
+</div>
+
+<!-- ═══ SOLUTIONS BENTO ═══ -->
+<section class="sec">
+  <div class="solutions-header reveal" style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3.5rem;flex-wrap:wrap;gap:1.5rem;">
+    <div>
+      <div class="eyebrow">What We Build</div>
+      <h2 class="sec-h">Solutions that <em>scale</em><br/>with your ambition</h2>
+    </div>
+    <a href="solutions.html" class="btn-text" style="color:var(--blue);font-weight:500;">View all solutions <span class="arr">→</span></a>
+  </div>
+
+  <div class="bento reveal">
+    <div class="bento-cell b1 dark">
+      <span class="bento-num">01</span>
+      <div class="bento-ico">💻</div>
+      <h3 class="bento-h">Software Development</h3>
+      <p class="bento-p">Bespoke web, desktop, and enterprise applications engineered to your exact workflow — from startup MVP to enterprise ERP.</p>
+      <span class="bento-tag">Custom · Scalable · Secure</span>
+    </div>
+    <div class="bento-cell b2">
+      <span class="bento-num">02</span>
+      <div class="bento-ico">☁️</div>
+      <h3 class="bento-h">Cloud Solutions</h3>
+      <p class="bento-p">AWS, Azure & GCP migrations with 24/7 managed infrastructure.</p>
+      <span class="bento-tag">AWS · Azure · GCP</span>
+    </div>
+    <div class="bento-cell b3 blue">
+      <span class="bento-num">03</span>
+      <div class="bento-ico">🔒</div>
+      <h3 class="bento-h">Cybersecurity</h3>
+      <p class="bento-p">Multi-layer threat protection, pen testing & compliance audits.</p>
+      <span class="bento-tag">ISO · PCI-DSS</span>
+    </div>
+    <div class="bento-cell b4">
+      <span class="bento-num">04</span>
+      <div class="bento-ico">📱</div>
+      <h3 class="bento-h">Mobile Apps</h3>
+      <p class="bento-p">iOS & Android apps built with React Native for a consistent, high-performance cross-platform experience.</p>
+      <span class="bento-tag">iOS · Android · Flutter</span>
+    </div>
+    <div class="bento-cell b5">
+      <span class="bento-num">05</span>
+      <div class="bento-ico">🤖</div>
+      <h3 class="bento-h">AI & ML</h3>
+      <p class="bento-p">Custom models, chatbots, and intelligent automation.</p>
+      <span class="bento-tag">LLM · Computer Vision</span>
+    </div>
+    <div class="bento-cell b6">
+      <span class="bento-num">06</span>
+      <div class="bento-ico">🎨</div>
+      <h3 class="bento-h">UI/UX & Brand Design</h3>
+      <p class="bento-p">Research-driven design systems and digital experiences that convert — built in Figma, delivered in code.</p>
+      <span class="bento-tag">Figma · Design Systems</span>
+    </div>
+    <div class="bento-cell b7">
+      <span class="bento-num">07</span>
+      <div class="bento-ico">📊</div>
+      <h3 class="bento-h">Digital Marketing & SEO</h3>
+      <p class="bento-p">Data-driven campaigns, search engine optimisation, and growth analytics that grow your audience and revenue. Strategy backed by measurable KPIs.</p>
+      <span class="bento-tag">SEO · SEM · Analytics</span>
+    </div>
+    <div class="bento-cell b8">
+      <span class="bento-num">08</span>
+      <div class="bento-ico">🖥️</div>
+      <h3 class="bento-h">Managed IT</h3>
+      <p class="bento-p">24/7 monitoring, patch management and helpdesk.</p>
+      <span class="bento-tag">SLA-backed Support</span>
+    </div>
+    <div class="bento-cell b9">
+      <span class="bento-num">09</span>
+      <div class="bento-ico">🔌</div>
+      <h3 class="bento-h">IT Hardware & Procurement</h3>
+      <p class="bento-p">Vendor-agnostic sourcing, lifecycle management and on-site installation of servers, networking, and endpoint devices.</p>
+      <span class="bento-tag">Servers · Networking · Endpoints</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT SPLIT ═══ -->
+<section class="sec sec-alt">
+  <div class="about-grid reveal">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1682163339125-321e5a7eac1e?w=800&q=80&auto=format&fit=crop" alt="Pusparaj Khadka — Founder & CEO"/>
+      <div class="about-img-overlay"></div>
+      <div class="about-img-badge">
+        <p>Founder & Chief Executive Officer</p>
+        <strong>Pusparaj Khadka · BIT</strong>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="eyebrow">About Evelynx</div>
+      <h2 class="sec-h">Engineered with purpose,<br/>delivered with <em>precision</em></h2>
+      <p class="sec-sub">Evelynx Solutions was founded with a single mission: deliver world-class IT to Nepal's businesses — at every scale, in every sector, without compromise.</p>
+      <div class="about-list">
+        <div class="about-item">
+          <div class="about-item-n">01</div>
+          <div class="about-item-text">
+            <h4>Nepal-first mindset</h4>
+            <p>Deep understanding of the local market, regulatory landscape, and business environment — solutions that work <em>here</em>.</p>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-item-n">02</div>
+          <div class="about-item-text">
+            <h4>Legally compliant & transparent</h4>
+            <p>OCR registered, PAN holder, SSF-compliant employer under Labour Act 2074, Companies Act 2063 and Privacy Act 2075.</p>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-item-n">03</div>
+          <div class="about-item-text">
+            <h4>Security-first in every engagement</h4>
+            <p>Data privacy, secure coding, and cybersecurity built into every solution from day one — not bolted on after.</p>
+          </div>
+        </div>
+        <div class="about-item">
+          <div class="about-item-n">04</div>
+          <div class="about-item-text">
+            <h4>Intellectual property belongs to you</h4>
+            <p>All work product created for your project is assigned to you on completion. No lock-in, no ambiguity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS STRIP ═══ -->
+<section class="sec-dark" style="padding:0;">
+  <div class="stats-row">
+    <div class="stat-cell reveal" data-delay="0">
+      <div class="stat-big"><span class="count" data-t="50">0</span><em>+</em></div>
+      <div class="stat-desc">Projects Delivered</div>
+    </div>
+    <div class="stat-cell reveal" data-delay="100">
+      <div class="stat-big"><span class="count" data-t="30">0</span><em>+</em></div>
+      <div class="stat-desc">Satisfied Clients</div>
+    </div>
+    <div class="stat-cell reveal" data-delay="200">
+      <div class="stat-big"><span class="count" data-t="12">0</span><em>+</em></div>
+      <div class="stat-desc">Technologies Mastered</div>
+    </div>
+    <div class="stat-cell reveal" data-delay="300">
+      <div class="stat-big">24<em>/7</em></div>
+      <div class="stat-desc">Support Coverage</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="sec">
+  <div class="reveal" style="max-width:560px;">
+    <div class="eyebrow">Service Lines</div>
+    <h2 class="sec-h">Every layer of your<br/><em>IT infrastructure</em> covered</h2>
+    <p class="sec-sub">From your daily helpdesk needs to a full digital transformation — we do it all under one SLA.</p>
+  </div>
+  <div class="svc-cols reveal">
+    <div class="svc-col">
+      <div class="svc-col-head">
+        <div class="svc-col-head-ico">🖥️</div>
+        <h3>Infrastructure</h3>
+      </div>
+      <div class="svc-item"><div class="svc-ico">🖥️</div><div><h4>Endpoint Management</h4><p>Centralized management of desktops, laptops, and mobile devices.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🛒</div><div><h4>IT Procurement</h4><p>Hardware and software sourcing, vendor negotiation, and lifecycle management.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🌐</div><div><h4>Network Management</h4><p>Proactive monitoring and optimization of your LAN, WAN, and VPN.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">☁️</div><div><h4>Cloud Backup & DR</h4><p>Automated backups and rapid recovery plans for business continuity.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">📧</div><div><h4>Microsoft 365</h4><p>Migration, setup, and management of Microsoft 365 services.</p></div></div>
+    </div>
+    <div class="svc-col">
+      <div class="svc-col-head">
+        <div class="svc-col-head-ico">🛡️</div>
+        <h3>Security</h3>
+      </div>
+      <div class="svc-item"><div class="svc-ico">🛡️</div><div><h4>Endpoint Protection</h4><p>Next-gen antivirus, anti-malware, and device control.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🔍</div><div><h4>Risk Analysis</h4><p>Comprehensive assessment of vulnerabilities and compliance gaps.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🔐</div><div><h4>Ransomware Protection</h4><p>Multi-layered defense specifically designed to stop ransomware.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🎓</div><div><h4>Security Training</h4><p>Employee programs that turn your staff into your first line of defense.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🔑</div><div><h4>Identity & Access Mgmt</h4><p>Secure access controls and privilege management across your org.</p></div></div>
+    </div>
+    <div class="svc-col">
+      <div class="svc-col-head">
+        <div class="svc-col-head-ico">💻</div>
+        <h3>Remote Workers</h3>
+      </div>
+      <div class="svc-item"><div class="svc-ico">💻</div><div><h4>Virtual Desktops</h4><p>Secure, cloud-based desktops accessible from anywhere on any device.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">✉️</div><div><h4>Business Email</h4><p>Professional hosting, spam filtering, and archiving solutions.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🔧</div><div><h4>Hardware Support</h4><p>On-site and remote troubleshooting, repair, and maintenance.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">📂</div><div><h4>Remote File Access</h4><p>Secure, encrypted access to company files from anywhere in the world.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">📱</div><div><h4>Mobile Device Mgmt</h4><p>Enroll, secure, and manage smartphones and tablets.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TECH GRID ═══ -->
+<section class="sec sec-alt">
+  <div style="text-align:center;" class="reveal">
+    <div class="eyebrow eyebrow-center">Technologies</div>
+    <h2 class="sec-h" style="text-align:center;">Our tech <em>arsenal</em></h2>
+    <p class="sec-sub" style="margin:0 auto;">We're technology-agnostic and fluent across every major stack, cloud, and framework.</p>
+  </div>
+  <div class="tech-grid reveal">
+    <div class="tech-item"><span>⚛️</span>React</div>
+    <div class="tech-item"><span>🟢</span>Node.js</div>
+    <div class="tech-item"><span>🐍</span>Python</div>
+    <div class="tech-item"><span>☕</span>Java</div>
+    <div class="tech-item"><span>🦋</span>Flutter</div>
+    <div class="tech-item"><span>🔵</span>TypeScript</div>
+    <div class="tech-item"><span>☁️</span>AWS</div>
+    <div class="tech-item"><span>🔷</span>Azure</div>
+    <div class="tech-item"><span>🌩️</span>GCP</div>
+    <div class="tech-item"><span>🐳</span>Docker</div>
+    <div class="tech-item"><span>⚙️</span>Kubernetes</div>
+    <div class="tech-item"><span>🗄️</span>PostgreSQL</div>
+    <div class="tech-item"><span>🍃</span>MongoDB</div>
+    <div class="tech-item"><span>🔴</span>Redis</div>
+    <div class="tech-item"><span>🤖</span>TensorFlow</div>
+    <div class="tech-item"><span>🔥</span>Laravel</div>
+    <div class="tech-item"><span>💎</span>Next.js</div>
+    <div class="tech-item"><span>🖥️</span>.NET Core</div>
+    <div class="tech-item"><span>📱</span>React Native</div>
+    <div class="tech-item"><span>🔐</span>Kubernetes</div>
+  </div>
+</section>
+
+<!-- ═══ PROCESS ═══ -->
+<section class="sec">
+  <div class="reveal" style="text-align:center;max-width:620px;margin:0 auto 0;">
+    <div class="eyebrow eyebrow-center">How We Work</div>
+    <h2 class="sec-h" style="text-align:center;">A proven <em>process</em>,<br/>every engagement</h2>
+  </div>
+  <div class="process-steps reveal">
+    <div class="step">
+      <div class="step-n">01</div>
+      <div class="step-ico">🔍</div>
+      <h4>Discover</h4>
+      <p>We start by deeply understanding your business, goals, constraints, and existing systems — before writing a single line of code.</p>
+    </div>
+    <div class="step">
+      <div class="step-n">02</div>
+      <div class="step-ico">✏️</div>
+      <h4>Design</h4>
+      <p>Architecture, UI wireframes, and a detailed project plan — signed off by you before any development begins.</p>
+    </div>
+    <div class="step">
+      <div class="step-n">03</div>
+      <div class="step-ico">⚙️</div>
+      <h4>Build</h4>
+      <p>Agile sprints with weekly demos. You see progress constantly and can course-correct in real time.</p>
+    </div>
+    <div class="step">
+      <div class="step-n">04</div>
+      <div class="step-ico">🚀</div>
+      <h4>Launch & Support</h4>
+      <p>Thorough QA, smooth deployment, and an ongoing SLA-backed support relationship that scales with you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="sec sec-alt">
+  <div class="reveal" style="text-align:center;">
+    <div class="eyebrow eyebrow-center">Client Stories</div>
+    <h2 class="sec-h" style="text-align:center;">Trusted by Nepal's<br/><em>leading businesses</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal" data-delay="0">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Evelynx delivered our e-commerce platform in under 8 weeks. The quality was exceptional and they were available at every step. Truly world-class service from a Kathmandu team.</p>
+      <div>
+        <div class="testi-author">Ramesh Shrestha</div>
+        <div class="testi-role">CEO, Himalayan Trade Co.</div>
+      </div>
+    </div>
+    <div class="testi-card reveal" data-delay="120">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Their cybersecurity assessment identified 12 critical vulnerabilities we had no idea about. Their team was thorough, professional, and explained everything clearly.</p>
+      <div>
+        <div class="testi-author">Sujata Tamrakar</div>
+        <div class="testi-role">CTO, FinServ Nepal</div>
+      </div>
+    </div>
+    <div class="testi-card reveal" data-delay="240">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">We moved our entire infrastructure to AWS with zero downtime. The Evelynx team managed every detail and our costs dropped by 40% in the first quarter.</p>
+      <div>
+        <div class="testi-author">Bikash Poudel</div>
+        <div class="testi-role">Director, Yeti Logistics</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="sec">
+  <div style="text-align:center;" class="reveal">
+    <div class="eyebrow eyebrow-center">FAQ</div>
+    <h2 class="sec-h" style="text-align:center;">Common <em>questions</em></h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-btn">Do you work with startups or only enterprises?<span class="faq-plus">+</span></button>
+      <div class="faq-body">We work with businesses of all sizes — from early-stage startups needing an MVP to large enterprises running mission-critical systems. Our pricing scales accordingly.</div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-btn">Is Evelynx Solutions a registered company?<span class="faq-plus">+</span></button>
+      <div class="faq-body">Yes. We are registered with the Office of the Company Registrar (OCR) under the Companies Act 2063, hold a PAN, and are SSF-compliant under Nepal's Labour Act 2074.</div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-btn">Who owns the IP and source code after a project?<span class="faq-plus">+</span></button>
+      <div class="faq-body">You do, fully. All intellectual property, source code, databases, and work product created for your project are contractually assigned to you on project completion with no ongoing licensing fees.</div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-btn">What engagement models do you offer?<span class="faq-plus">+</span></button>
+      <div class="faq-body">Fixed-price projects, time-and-materials engagements, dedicated team pods, and monthly managed IT retainers. We'll recommend the best model for your situation in the initial consultation.</div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-btn">Do you provide post-launch support?<span class="faq-plus">+</span></button>
+      <div class="faq-body">Absolutely. All projects include a free 30-day warranty, after which we offer flexible SLA-backed support plans ranging from business-hours coverage to 24/7 on-call engineering.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NSIC STRIP ═══ -->
+<div class="nsic-strip">
+  <div class="nsic-inner">
+    <span class="nsic-label">Compliance & Standards</span>
+    <div class="nsic-items">
+      <span class="nsic-chip"><strong>OCR</strong> Registered</span>
+      <span class="nsic-chip"><strong>PAN</strong> Holder</span>
+      <span class="nsic-chip"><strong>SSF</strong> Compliant</span>
+      <span class="nsic-chip">Companies Act <strong>2063</strong></span>
+      <span class="nsic-chip">Labour Act <strong>2074</strong></span>
+      <span class="nsic-chip">Privacy Act <strong>2075</strong></span>
+      <span class="nsic-chip"><strong>ISO-27001</strong> Aligned</span>
+      <span class="nsic-chip">GDPR Aware</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="sec">
+  <div style="text-align:center;max-width:580px;margin:0 auto 4rem;" class="reveal">
+    <div class="eyebrow eyebrow-center">Get in Touch</div>
+    <h2 class="sec-h" style="text-align:center;">Let's build something<br/><em>remarkable</em> together</h2>
+    <p class="sec-sub" style="margin:0 auto;">Tell us about your project and we'll be in touch within 24 hours.</p>
+  </div>
+  <div class="contact-wrap reveal">
+    <div class="contact-left">
+      <h3>Reach us<br/>at <em>any time</em></h3>
+      <p>Our team is distributed across Kathmandu and available to talk through your requirements — in English or Nepali.</p>
+      <div class="contact-details">
+        <div class="contact-row"><div class="contact-ico">📧</div><div><p>Email</p><strong>info@evelynxsolutions.com.np</strong></div></div>
+        <div class="contact-row"><div class="contact-ico">📞</div><div><p>Phone / WhatsApp</p><strong>+977-9768969780</strong></div></div>
+        <div class="contact-row"><div class="contact-ico">📍</div><div><p>Office</p><strong>Kathmandu, Nepal</strong></div></div>
+        <div class="contact-row"><div class="contact-ico">🕐</div><div><p>Working hours</p><strong>Sun – Fri, 9:00am – 6:00pm (NPT)</strong></div></div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form id="contactForm" action="https://formspree.io/f/xbdbqerg" method="POST">
+        <div class="form-row">
+          <div class="form-group"><label>Full name</label><input type="text" name="name" placeholder="Your name" required/></div>
+          <div class="form-group"><label>Email address</label><input type="email" name="_replyto" placeholder="you@company.com" required/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone</label><input type="tel" name="phone" placeholder="+977-__________"/></div>
+          <div class="form-group"><label>Company</label><input type="text" name="company" placeholder="Company name"/></div>
+        </div>
+        <div class="form-group">
+          <label>Service needed</label>
+          <select name="service">
+            <option value="">Select a service…</option>
+            <option>Software Development</option>
+            <option>Web / Portal Development</option>
+            <option>Mobile App Development</option>
+            <option>Cloud & Infrastructure</option>
+            <option>AI / Machine Learning</option>
+            <option>Cybersecurity</option>
+            <option>UI/UX & Design</option>
+            <option>Digital Marketing</option>
+            <option>IT Consulting</option>
+            <option>IT Hardware</option>
+            <option>Managed IT Services</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Tell us about your project</label><textarea name="message" placeholder="Describe your project, timeline and budget…"></textarea></div>
+        <button type="submit" class="form-submit">Send enquiry →</button>
+        <p class="form-msg" id="formMsg">Thank you — we'll be in touch within 24 hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="f-logo">
+        <div class="nav-logo-mark" style="width:34px;height:34px;border-radius:7px;">
+          <svg viewBox="0 0 56 56" fill="none" style="width:19px;height:19px;"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="3" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="1.5" fill="#fff"/></svg>
+        </div>
+        Evelynx Solutions
+      </div>
+      <p>A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.</p>
+      <div class="footer-social">
+        <a href="#" class="footer-social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="footer-social-link" aria-label="Facebook">f</a>
+        <a href="https://wa.me/9779768969780" class="footer-social-link" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Solutions</h5>
+      <a href="solutions.html">Software Development</a>
+      <a href="solutions.html">Cloud Solutions</a>
+      <a href="solutions.html">Cybersecurity</a>
+      <a href="solutions.html">AI & ML</a>
+      <a href="solutions.html">UI/UX Design</a>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <a href="about.html">About us</a>
+      <a href="services.html">Services</a>
+      <a href="why-us.html">Why Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h5>Legal</h5>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Companies Act 2063</a>
+      <a href="#">Labour Act 2074</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.</p>
+    <div class="footer-tags">
+      <span class="f-tag">OCR Registered</span>
+      <span class="f-tag">PAN Holder</span>
+      <span class="f-tag">SSF Compliant</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ FLOATERS ═══ -->
+<a href="tel:+9779768969780" class="mob-call">📞 Tap to call — +977-9768969780</a>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div class="chat-float" id="chatFloat">
+  <div class="chat-pop" id="chatPop">
+    <button class="chat-pop-close" id="chatClose">✕</button>
+    <h5>How can we help?</h5>
+    <a href="https://wa.me/9779768969780" target="_blank">💬 WhatsApp Chat</a>
+    <a href="mailto:info@evelynxsolutions.com.np">✉️ Email Us</a>
+    <a href="tel:+9779768969780">📞 Call Now</a>
+  </div>
+  <button class="chat-float-btn" id="chatBtn">💬</button>
+</div>
+<div class="cookie-bar" id="cookieBar">
+  <span>🍪 We use cookies to improve your experience. <a href="#">Privacy Policy</a>.</span>
+  <button class="cookie-accept" id="cookieAccept">Accept</button>
+</div>
+
+<script src="main.js"></script></body>
+</html>

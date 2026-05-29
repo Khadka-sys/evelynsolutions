@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Evelynx — Start your IT project in Nepal</title>
+<meta name="description" content="Reach Evelynx Solutions in Kathmandu. Call, WhatsApp, email, or fill the form – we respond within 24 hours."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="prog"></div>
+
+<!-- ═══ NAV ═══ -->
+<header class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark"><svg viewBox="0 0 56 56" fill="none"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="4" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="2" fill="#fff"/></svg></div>
+    Evelynx
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="why-us.html">Why Us</a>
+  </nav>
+  <div class="nav-right">
+    <button class="nav-lang" id="langBtn">🇳🇵 नेपाली</button>
+    <a href="contact.html" class="nav-cta" style="background: white; color: black;">Contact us</a>
+  </div>
+  <button class="nav-ham" id="hamBtn"><span></span><span></span><span></span></button>
+</header>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="why-us.html">Why Us</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ═══ CONTACT HERO (minimal) ═══ -->
+<section class="hero" style="min-height: 50vh; padding-bottom: 2rem;">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Let's Connect</div>
+    <h1 class="hero-h1">Start your<br/><em>digital journey</em><br/>today</h1>
+    <p class="hero-p">Tell us about your project, challenge, or idea. We'll get back to you within one business day.</p>
+  </div>
+  <div class="hero-right">
+    <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200&q=80&auto=format&fit=crop" alt="Contact"/>
+    <div class="hero-overlay"></div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT FORM & DETAILS (enhanced version of index contact) ═══ -->
+<section class="sec">
+  <div class="contact-wrap reveal">
+    <div class="contact-left">
+      <h3>Reach us<br/>at <em>any time</em></h3>
+      <p>Our team is distributed across Kathmandu and available to talk through your requirements — in English or Nepali.</p>
+      <div class="contact-details">
+        <div class="contact-row"><div class="contact-ico">📧</div><div><p>Email</p><strong>info@evelynxsolutions.com.np</strong></div></div>
+        <div class="contact-row"><div class="contact-ico">📞</div><div><p>Phone / WhatsApp</p><strong>+977-9768969780</strong></div></div>
+        <div class="contact-row"><div class="contact-ico">📍</div><div><p>Office</p><strong>Kathmandu, Nepal (exact address provided upon appointment)</strong></div></div>
+        <div class="contact-row"><div class="contact-ico">🕐</div><div><p>Working hours</p><strong>Sun – Fri, 9:00am – 6:00pm (NPT)</strong></div></div>
+      </div>
+      <div class="footer-social" style="margin-top: 2rem;">
+        <a href="#" class="footer-social-link">in</a>
+        <a href="#" class="footer-social-link">f</a>
+        <a href="https://wa.me/9779768969780" class="footer-social-link">💬</a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form id="contactForm" action="https://formspree.io/f/xbdbqerg" method="POST">
+        <div class="form-row">
+          <div class="form-group"><label>Full name *</label><input type="text" name="name" placeholder="Your name" required/></div>
+          <div class="form-group"><label>Email address *</label><input type="email" name="_replyto" placeholder="you@company.com" required/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone</label><input type="tel" name="phone" placeholder="+977-__________"/></div>
+          <div class="form-group"><label>Company</label><input type="text" name="company" placeholder="Company name"/></div>
+        </div>
+        <div class="form-group">
+          <label>Service needed</label>
+          <select name="service">
+            <option value="">Select a service…</option>
+            <option>Software Development</option>
+            <option>Web / Portal Development</option>
+            <option>Mobile App Development</option>
+            <option>Cloud & Infrastructure</option>
+            <option>AI / Machine Learning</option>
+            <option>Cybersecurity</option>
+            <option>UI/UX & Design</option>
+            <option>Digital Marketing</option>
+            <option>IT Consulting</option>
+            <option>IT Hardware</option>
+            <option>Managed IT Services</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Tell us about your project *</label><textarea name="message" placeholder="Describe your project, timeline and budget…" required></textarea></div>
+        <button type="submit" class="form-submit">Send enquiry →</button>
+        <p class="form-msg" id="formMsg">✓ Thank you — we'll be in touch within 24 hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MAP / ADDITIONAL INFO (optional) ═══ -->
+<section class="sec-alt" style="text-align: center;">
+  <div class="reveal">
+    <div class="eyebrow eyebrow-center">Visit Us</div>
+    <h2 class="sec-h" style="margin-bottom: 1rem;">We're based in <em>Kathmandu</em>,<br/>serving all of Nepal</h2>
+    <p>While we work with clients remotely across the country, on‑site visits can be arranged for enterprises in the valley.</p>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand"><div class="f-logo"><div class="nav-logo-mark" style="width:34px;height:34px;"><svg viewBox="0 0 56 56" fill="none" style="width:19px;"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3"/><circle cx="30" cy="46" r="3" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="1.5" fill="#fff"/></svg></div>Evelynx Solutions</div><p>A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.</p><div class="footer-social"><a href="#" class="footer-social-link">in</a><a href="#" class="footer-social-link">f</a><a href="https://wa.me/9779768969780" class="footer-social-link">💬</a></div></div>
+    <div class="footer-col"><h5>Solutions</h5><a href="solutions.html">Software Development</a><a href="solutions.html">Cloud Solutions</a><a href="solutions.html">Cybersecurity</a><a href="solutions.html">AI & ML</a><a href="solutions.html">UI/UX Design</a></div>
+    <div class="footer-col"><h5>Company</h5><a href="about.html">About us</a><a href="services.html">Services</a><a href="why-us.html">Why Us</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h5>Legal</h5><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Companies Act 2063</a><a href="#">Labour Act 2074</a></div>
+  </div>
+  <div class="footer-bottom"><p>© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.</p><div class="footer-tags"><span class="f-tag">OCR Registered</span><span class="f-tag">PAN Holder</span><span class="f-tag">SSF Compliant</span></div></div>
+</footer>
+
+<a href="tel:+9779768969780" class="mob-call">📞 Tap to call — +977-9768969780</a>
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div class="chat-float" id="chatFloat"><div class="chat-pop" id="chatPop"><button class="chat-pop-close" id="chatClose">✕</button><h5>How can we help?</h5><a href="https://wa.me/9779768969780" target="_blank">💬 WhatsApp Chat</a><a href="mailto:info@evelynxsolutions.com.np">✉️ Email Us</a><a href="tel:+9779768969780">📞 Call Now</a></div><button class="chat-float-btn" id="chatBtn">💬</button></div>
+<div class="cookie-bar" id="cookieBar"><span>🍪 We use cookies to improve your experience. <a href="#">Privacy Policy</a>.</span><button class="cookie-accept" id="cookieAccept">Accept</button></div>
+
+<script src="main.js"></script>
+</body>
+</html>
