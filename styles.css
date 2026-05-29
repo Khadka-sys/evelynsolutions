@@ -186,20 +186,6 @@ body.light-mode .theme-toggle:hover {
   background: rgba(0, 0, 0, 0.15);
 }
 
-.nav-cta {
-  background: var(--blue);
-  padding: 0.6rem 1.4rem;
-  border-radius: 40px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: var(--transition);
-}
-
-.nav-cta:hover {
-  background: var(--blue-dark);
-  transform: translateY(-2px);
-}
-
 .nav-ham {
   display: none;
   flex-direction: column;
