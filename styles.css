@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════
    EVELYNX SOLUTIONS — GLOBAL STYLES
-   Version 1.0
+   Version 2.0 (Refined)
 ═══════════════════════════════════════════════ */
 
 /* ── RESET & BASE ── */
@@ -142,12 +142,12 @@ button {
   gap: 1.5rem;
 }
 
-/* Language and theme toggle buttons - lighter style */
+/* Language and theme toggle buttons */
 .nav-lang,
 .theme-toggle {
-  background: rgba(255, 255, 255, 0.15);  /* Lighter background */
+  background: rgba(255, 255, 255, 0.15);
   border: none;
-  color: #ffffff;                         /* White text for dark mode */
+  color: #ffffff;
   padding: 0.4rem 0.9rem;
   border-radius: 40px;
   font-size: 0.85rem;
@@ -157,7 +157,6 @@ button {
   backdrop-filter: blur(4px);
 }
 
-/* Theme toggle specific – round and slightly smaller */
 .theme-toggle {
   width: 38px;
   height: 38px;
@@ -168,24 +167,11 @@ button {
   font-size: 1.2rem;
 }
 
-/* Hover effect */
 .nav-lang:hover,
 .theme-toggle:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
 }
-
-/* Light mode adjustments */
-body.light-mode .nav-lang,
-body.light-mode .theme-toggle {
-  background: rgba(0, 0, 0, 0.08);
-  color: #1a1f2e;                         /* Dark text for light mode */
-}
-body.light-mode .nav-lang:hover,
-body.light-mode .theme-toggle:hover {
-  background: rgba(0, 0, 0, 0.15);
-}
-
 
 .nav-cta {
   background: var(--blue);
@@ -673,17 +659,17 @@ body.light-mode .theme-toggle:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #e0e0e0;           /* 👈 Slightly dimmed white/gray */
+  color: #e0e0e0;
   background: transparent;
   cursor: pointer;
 }
 .faq-btn:hover {
-  color: #ffffff;           /* 👈 Brighten on hover */
+  color: #ffffff;
 }
 .faq-plus {
   font-size: 1.5rem;
   transition: 0.2s;
-  color: #e0e0e0;           /* 👈 Match question color */
+  color: #e0e0e0;
 }
 .faq-item.open .faq-plus { 
   transform: rotate(45deg); 
@@ -692,7 +678,7 @@ body.light-mode .theme-toggle:hover {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
-  color: #b0b0b0;           /* 👈 Dimmer gray for answers (softer) */
+  color: #b0b0b0;
   padding: 0 0.5rem;
 }
 .faq-item.open .faq-body { 
@@ -950,4 +936,205 @@ body.light-mode .theme-toggle:hover {
   .stats-row { flex-direction: column; gap: 2rem; align-items: center; }
   .contact-wrap { padding: 1.5rem; }
   .form-row { flex-direction: column; }
+}
+
+/* ==================== LIGHT MODE OVERRIDES ==================== */
+body.light-mode {
+  --bg-dark: #f5f7fc;
+  --bg-alt: #ffffff;
+  --card-bg: #ffffff;
+  --text-primary: #1a1f2e;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --border-light: rgba(0,0,0,0.1);
+}
+
+/* Language & theme buttons in light mode */
+body.light-mode .nav-lang,
+body.light-mode .theme-toggle {
+  background: rgba(0, 0, 0, 0.08);
+  color: #1a1f2e;
+}
+body.light-mode .nav-lang:hover,
+body.light-mode .theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Bento numbers & content */
+body.light-mode .bento-num,
+body.light-mode .bento-h,
+body.light-mode .bento-p,
+body.light-mode .bento-tag,
+body.light-mode .bento-ico {
+  color: #1a1f2e !important;
+}
+body.light-mode .bento-cell {
+  background: #ffffff !important;
+  border: 1px solid #e0e0e0 !important;
+}
+body.light-mode .bento-cell.b1.dark {
+  background: linear-gradient(135deg, #f8f9fa, #ffffff) !important;
+}
+body.light-mode .btn-text {
+  color: var(--blue) !important;
+}
+body.light-mode .solutions-header .eyebrow,
+body.light-mode .solutions-header .sec-h,
+body.light-mode .solutions-header .sec-h em {
+  color: #1a1f2e !important;
+}
+
+/* Stats strip */
+body.light-mode .stats-row {
+  background: #e9ecef !important;
+}
+body.light-mode .stat-n,
+body.light-mode .stat-desc,
+body.light-mode .stat-big {
+  color: #1a1f2e !important;
+}
+
+/* Footer */
+body.light-mode .footer {
+  background: #f0f2f5 !important;
+}
+body.light-mode .footer,
+body.light-mode .footer p,
+body.light-mode .footer a,
+body.light-mode .footer h5,
+body.light-mode .footer-bottom p,
+body.light-mode .footer-tags .f-tag {
+  color: #1a1f2e !important;
+}
+
+/* About badge */
+body.light-mode .about-img-badge {
+  background: rgba(255,255,255,0.9) !important;
+}
+body.light-mode .about-img-badge p,
+body.light-mode .about-img-badge strong {
+  color: #1a1f2e !important;
+}
+
+/* FAQ */
+body.light-mode .faq-btn,
+body.light-mode .faq-body,
+body.light-mode .faq-plus {
+  color: #1a1f2e !important;
+}
+body.light-mode .faq-item {
+  border-bottom-color: rgba(0,0,0,0.1) !important;
+}
+
+/* Services columns */
+body.light-mode .svc-col,
+body.light-mode .svc-col h3,
+body.light-mode .svc-item h4,
+body.light-mode .svc-item p {
+  color: #1a1f2e !important;
+}
+
+/* Testimonials */
+body.light-mode .testi-card,
+body.light-mode .testi-author,
+body.light-mode .testi-role,
+body.light-mode .testi-text {
+  color: #1a1f2e !important;
+}
+body.light-mode .testi-card {
+  background: #ffffff !important;
+  border-color: #ddd !important;
+}
+
+/* Process steps */
+body.light-mode .step,
+body.light-mode .step h4,
+body.light-mode .step p {
+  color: #1a1f2e !important;
+}
+body.light-mode .step {
+  background: #ffffff !important;
+  border-color: #ddd !important;
+}
+
+/* Tech grid */
+body.light-mode .tech-item {
+  background: #e9ecef !important;
+  color: #1a1f2e !important;
+  border-color: #ccc !important;
+}
+
+/* NSIC strip */
+body.light-mode .nsic-strip,
+body.light-mode .nsic-chip {
+  background: #e9ecef !important;
+  color: #1a1f2e !important;
+}
+
+/* Contact form */
+body.light-mode .contact-wrap,
+body.light-mode .contact-left h3,
+body.light-mode .contact-left p,
+body.light-mode .contact-row p,
+body.light-mode .contact-row strong,
+body.light-mode .form-group label,
+body.light-mode .form-group input,
+body.light-mode .form-group select,
+body.light-mode .form-group textarea {
+  color: #1a1f2e !important;
+}
+body.light-mode .contact-wrap {
+  background: #ffffff !important;
+}
+body.light-mode .form-group input,
+body.light-mode .form-group select,
+body.light-mode .form-group textarea {
+  background: #ffffff !important;
+  border-color: #ccc !important;
+  color: #1a1f2e !important;
+}
+
+/* Hero badge */
+body.light-mode .hero-badge {
+  background: #ffffff !important;
+  color: #1a1f2e !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+}
+body.light-mode .hero-badge-text strong,
+body.light-mode .hero-badge-text p {
+  color: #1a1f2e !important;
+}
+
+/* Chat widget */
+body.light-mode .chat-pop {
+  background: #ffffff !important;
+  color: #1a1f2e !important;
+  border-color: #ddd !important;
+}
+body.light-mode .chat-pop a {
+  color: var(--blue) !important;
+}
+
+/* Cookie bar */
+body.light-mode .cookie-bar {
+  background: #ffffff !important;
+  color: #1a1f2e !important;
+  border-top: 1px solid #ddd !important;
+}
+
+/* Fix navbar background in light mode when scrolled */
+body.light-mode .nav.bg {
+  background: rgba(245, 247, 252, 0.92) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Fix mobile menu background in light mode */
+body.light-mode .mob-menu {
+  background: rgba(245, 247, 252, 0.98) !important;
+  backdrop-filter: blur(20px);
+}
+
+body.light-mode .mob-menu a {
+  color: #1a1f2e !important;
 }

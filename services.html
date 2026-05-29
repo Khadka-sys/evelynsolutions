@@ -14,161 +14,311 @@
 
 <div id="prog"></div>
 
-<!-- ═══ NAV ═══ -->
 <header class="nav" id="nav">
   <a href="index.html" class="nav-logo">
-    <div class="nav-logo-mark">
-      <svg viewBox="0 0 56 56" fill="none"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="4" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="2" fill="#fff"/></svg>
-    </div>
+    <div class="nav-logo-mark"><svg viewBox="0 0 56 56" fill="none"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="4" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="2" fill="#fff"/></svg></div>
     Evelynx
   </a>
   <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html" class="active">Services</a>
-    <a href="solutions.html">Solutions</a>
-    <a href="why-us.html">Why Us</a>
+    <a href="index.html" data-i18n="home">Home</a>
+    <a href="about.html" data-i18n="about">About</a>
+    <a href="services.html" data-i18n="services">Services</a>
+    <a href="solutions.html" data-i18n="solutions">Solutions</a>
+    <a href="why-us.html" data-i18n="whyUs">Why Us</a>
   </nav>
   <div class="nav-right">
     <button class="nav-lang" id="langBtn">🇳🇵 नेपाली</button>
-    <a href="contact.html" class="nav-cta">Contact us</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Light/Dark mode">🌙</button>
+    <a href="contact.html" class="nav-cta" data-i18n="contact">Contact us</a>
   </div>
   <button class="nav-ham" id="hamBtn"><span></span><span></span><span></span></button>
 </header>
 <div class="mob-menu" id="mobMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="solutions.html">Solutions</a>
-  <a href="why-us.html">Why Us</a>
-  <a href="contact.html">Contact</a>
+  <a href="index.html" data-i18n="home">Home</a>
+  <a href="about.html" data-i18n="about">About</a>
+  <a href="services.html" data-i18n="services">Services</a>
+  <a href="solutions.html" data-i18n="solutions">Solutions</a>
+  <a href="why-us.html" data-i18n="whyUs">Why Us</a>
+  <a href="contact.html" data-i18n="contact">Contact</a>
 </div>
 
-<!-- ═══ HERO (working image) ═══ -->
 <section class="hero" style="min-height: 70vh;">
   <div class="hero-left">
-    <div class="hero-eyebrow">What We Offer</div>
+    <div class="hero-eyebrow" data-i18n="servicesHeroEyebrow">What We Offer</div>
     <h1 class="hero-h1">
-      Full‑spectrum IT services,<br/>
-      <em>one trusted partner</em>
+      <span data-i18n="servicesHeroLine1">Full‑spectrum IT services,</span><br/>
+      <em><span data-i18n="servicesHeroLine2">one trusted partner</span></em>
     </h1>
-    <p class="hero-p">From daily IT support to enterprise-scale transformation — every service you need, delivered with the consistency of a world-class team.</p>
+    <p class="hero-p" data-i18n="servicesHeroDesc">From daily IT support to enterprise-scale transformation — every service you need, delivered with the consistency of a world-class team.</p>
     <div class="hero-stats">
-      <div><div class="stat-n">24<sup>/7</sup></div><div class="stat-l">Support Coverage</div></div>
-      <div><div class="stat-n"><span class="count" data-t="20">0</span><sup>+</sup></div><div class="stat-l">Service Categories</div></div>
-      <div><div class="stat-n"><span class="count" data-t="99">0</span><sup>%</sup></div><div class="stat-l">Client Satisfaction</div></div>
+      <div><div class="stat-n">24<sup>/7</sup></div><div class="stat-l" data-i18n="statsSupport">Support Coverage</div></div>
+      <div><div class="stat-n"><span class="count" data-t="20">0</span><sup>+</sup></div><div class="stat-l" data-i18n="serviceCategories">Service Categories</div></div>
+      <div><div class="stat-n"><span class="count" data-t="99">0</span><sup>%</sup></div><div class="stat-l" data-i18n="clientSatisfaction">Client Satisfaction</div></div>
     </div>
   </div>
   <div class="hero-right">
-    <img src="https://picsum.photos/id/26/1200/800" alt="IT Services" style="object-fit:cover;width:100%;height:auto;border-radius:32px;"/>
+    <img src="https://picsum.photos/id/26/1200/800" alt="Services" style="object-fit:cover;width:100%;height:auto;border-radius:32px;"/>
     <div class="hero-overlay"></div>
   </div>
 </section>
 
-<!-- ═══ SERVICES TABLE (unchanged) ═══ -->
 <section class="sec">
   <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto 3rem;">
-    <div class="eyebrow eyebrow-center">Service Lines</div>
-    <h2 class="sec-h" style="text-align:center;">Every layer of your<br/><em>IT infrastructure</em> covered</h2>
-    <p class="sec-sub">Three core pillars. Dozens of specialisms. One SLA.</p>
+    <div class="eyebrow eyebrow-center" data-i18n="servicesEyebrow">Service Lines</div>
+    <h2 class="sec-h" style="text-align:center;"><span data-i18n="servicesTitlePart1">Every layer of your</span><br/><em><span data-i18n="servicesTitlePart2">IT infrastructure</span></em><br/><span data-i18n="servicesTitlePart3">covered</span></h2>
+    <p class="sec-sub" data-i18n="servicesSub">Three core pillars. Dozens of specialisms. One SLA.</p>
   </div>
   <div class="svc-cols reveal">
-    <!-- INFRASTRUCTURE -->
     <div class="svc-col">
-      <div class="svc-col-head"><div class="svc-col-head-ico">🖥️</div><h3>Infrastructure</h3></div>
-      <div class="svc-item"><div class="svc-ico">🖥️</div><div><h4>Endpoint Management</h4><p>Centralized management of desktops, laptops, and mobile devices with patching, inventory, and policy control.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🛒</div><div><h4>IT Procurement</h4><p>Hardware and software sourcing, vendor negotiation, and lifecycle management for your IT assets.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🌐</div><div><h4>Network Management</h4><p>Proactive monitoring, configuration, and optimization of your LAN, WAN, and VPN connections.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">⚙️</div><div><h4>IT Operations</h4><p>Day-to-day IT operations management, ensuring systems run smoothly and efficiently at all times.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">☁️</div><div><h4>Cloud Backup & Disaster Recovery</h4><p>Automated backups and rapid recovery plans to keep your business running after any disruption.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">📧</div><div><h4>Microsoft 365 for Business</h4><p>Migration, setup, and management of Microsoft 365 — email, Teams, SharePoint, and more.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🔥</div><div><h4>Managed Firewall Services</h4><p>24/7 firewall monitoring, rule management, and intrusion prevention to keep threats out.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🎧</div><div><h4>Managed Helpdesk</h4><p>Multi-channel IT support desk for your employees, with fast resolution and friendly service.</p></div></div>
+      <div class="svc-col-head"><div class="svc-col-head-ico">🖥️</div><h3 data-i18n="infra">Infrastructure</h3></div>
+      <div class="svc-item"><div class="svc-ico">🖥️</div><div><h4 data-i18n="endpointMgmt">Endpoint Management</h4><p data-i18n="endpointMgmtDesc">Centralized management of desktops, laptops, and mobile devices with patching, inventory, and policy control.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🛒</div><div><h4 data-i18n="itProcurement">IT Procurement</h4><p data-i18n="itProcurementDesc">Hardware and software sourcing, vendor negotiation, and lifecycle management for your IT assets.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🌐</div><div><h4 data-i18n="networkMgmt">Network Management</h4><p data-i18n="networkMgmtDesc">Proactive monitoring, configuration, and optimization of your LAN, WAN, and VPN connections.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">⚙️</div><div><h4 data-i18n="itOperations">IT Operations</h4><p data-i18n="itOperationsDesc">Day-to-day IT operations management, ensuring systems run smoothly and efficiently at all times.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">☁️</div><div><h4 data-i18n="cloudBackup">Cloud Backup & Disaster Recovery</h4><p data-i18n="cloudBackupDesc">Automated backups and rapid recovery plans to keep your business running after any disruption.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">📧</div><div><h4 data-i18n="ms365">Microsoft 365 for Business</h4><p data-i18n="ms365Desc">Migration, setup, and management of Microsoft 365 — email, Teams, SharePoint, and more.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🔥</div><div><h4 data-i18n="managedFirewall">Managed Firewall Services</h4><p data-i18n="managedFirewallDesc">24/7 firewall monitoring, rule management, and intrusion prevention to keep threats out.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🎧</div><div><h4 data-i18n="managedHelpdesk">Managed Helpdesk</h4><p data-i18n="managedHelpdeskDesc">Multi-channel IT support desk for your employees, with fast resolution and friendly service.</p></div></div>
     </div>
-    <!-- SECURITY -->
     <div class="svc-col">
-      <div class="svc-col-head"><div class="svc-col-head-ico">🛡️</div><h3>Security</h3></div>
-      <div class="svc-item"><div class="svc-ico">🛡️</div><div><h4>Endpoint Protection</h4><p>Next-gen antivirus, anti-malware, and device control to secure all endpoints across your org.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🔍</div><div><h4>IT Security Risk Analysis</h4><p>Comprehensive assessment of your IT environment to identify vulnerabilities and compliance gaps.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🔐</div><div><h4>Ransomware Protection</h4><p>Multi-layered defense and recovery strategies specifically designed to stop ransomware attacks.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🎓</div><div><h4>Security Awareness Training</h4><p>Employee programs that transform your staff into the first line of defense against cyber threats.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">📋</div><div><h4>Vulnerability Assessment</h4><p>Regular scanning and penetration testing to find and fix security holes before attackers do.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🔑</div><div><h4>Identity & Access Management</h4><p>Secure access controls and privilege management across your entire organization.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">📊</div><div><h4>Compliance Audits</h4><p>ISO 27001, PCI-DSS, GDPR, and Nepal Privacy Act 2075 compliance assessments and documentation.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">👁️</div><div><h4>24/7 SOC Monitoring</h4><p>Round-the-clock security operations center monitoring with immediate incident response.</p></div></div>
+      <div class="svc-col-head"><div class="svc-col-head-ico">🛡️</div><h3 data-i18n="security">Security</h3></div>
+      <div class="svc-item"><div class="svc-ico">🛡️</div><div><h4 data-i18n="endpointProtection">Endpoint Protection</h4><p data-i18n="endpointProtectionDesc">Next-gen antivirus, anti-malware, and device control to secure all endpoints across your org.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🔍</div><div><h4 data-i18n="riskAnalysis">IT Security Risk Analysis</h4><p data-i18n="riskAnalysisDesc">Comprehensive assessment of your IT environment to identify vulnerabilities and compliance gaps.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🔐</div><div><h4 data-i18n="ransomwareProtection">Ransomware Protection</h4><p data-i18n="ransomwareProtectionDesc">Multi-layered defense and recovery strategies specifically designed to stop ransomware attacks.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🎓</div><div><h4 data-i18n="securityTraining">Security Awareness Training</h4><p data-i18n="securityTrainingDesc">Employee programs that transform your staff into the first line of defense against cyber threats.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">📋</div><div><h4 data-i18n="vulnerabilityAssessment">Vulnerability Assessment</h4><p data-i18n="vulnerabilityAssessmentDesc">Regular scanning and penetration testing to find and fix security holes before attackers do.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🔑</div><div><h4 data-i18n="identityMgmt">Identity & Access Management</h4><p data-i18n="identityMgmtDesc">Secure access controls and privilege management across your entire organization.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">📊</div><div><h4 data-i18n="complianceAudits">Compliance Audits</h4><p data-i18n="complianceAuditsDesc">ISO 27001, PCI-DSS, GDPR, and Nepal Privacy Act 2075 compliance assessments and documentation.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">👁️</div><div><h4 data-i18n="socMonitoring">24/7 SOC Monitoring</h4><p data-i18n="socMonitoringDesc">Round-the-clock security operations center monitoring with immediate incident response.</p></div></div>
     </div>
-    <!-- REMOTE WORKERS -->
     <div class="svc-col">
-      <div class="svc-col-head"><div class="svc-col-head-ico">💻</div><h3>Remote Workers</h3></div>
-      <div class="svc-item"><div class="svc-ico">💻</div><div><h4>Virtual Desktop Solutions</h4><p>Secure, cloud-based virtual desktops that allow your team to work from anywhere on any device.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">✉️</div><div><h4>Business Email Management</h4><p>Professional email hosting, spam filtering, and archiving for uninterrupted communication.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🔧</div><div><h4>Hardware Support Services</h4><p>On-site and remote hardware troubleshooting, repair, and maintenance for all employee devices.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">📂</div><div><h4>Remote File Access</h4><p>Secure, encrypted access to company files and shared drives from anywhere in the world.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">📱</div><div><h4>Mobile Device Management</h4><p>Enroll, secure, and manage smartphones and tablets used by your team, anywhere.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🤖</div><div><h4>AI-Powered Solutions</h4><p>Custom machine learning models, chatbots, and intelligent process automation.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🔗</div><div><h4>VPN & Secure Connectivity</h4><p>Enterprise-grade VPN solutions that keep remote work sessions secure and reliable.</p></div></div>
-      <div class="svc-item"><div class="svc-ico">🎥</div><div><h4>Collaboration Tools</h4><p>Deployment and management of Teams, Zoom, and other unified communications platforms.</p></div></div>
+      <div class="svc-col-head"><div class="svc-col-head-ico">💻</div><h3 data-i18n="remoteWorkers">Remote Workers</h3></div>
+      <div class="svc-item"><div class="svc-ico">💻</div><div><h4 data-i18n="virtualDesktops">Virtual Desktop Solutions</h4><p data-i18n="virtualDesktopsDesc">Secure, cloud-based virtual desktops that allow your team to work from anywhere on any device.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">✉️</div><div><h4 data-i18n="businessEmail">Business Email Management</h4><p data-i18n="businessEmailDesc">Professional email hosting, spam filtering, and archiving for uninterrupted communication.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🔧</div><div><h4 data-i18n="hardwareSupport">Hardware Support Services</h4><p data-i18n="hardwareSupportDesc">On-site and remote hardware troubleshooting, repair, and maintenance for all employee devices.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">📂</div><div><h4 data-i18n="remoteFileAccess">Remote File Access</h4><p data-i18n="remoteFileAccessDesc">Secure, encrypted access to company files and shared drives from anywhere in the world.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">📱</div><div><h4 data-i18n="mobileDeviceMgmt">Mobile Device Management</h4><p data-i18n="mobileDeviceMgmtDesc">Enroll, secure, and manage smartphones and tablets used by your team, anywhere.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🤖</div><div><h4 data-i18n="aiSolutions">AI-Powered Solutions</h4><p data-i18n="aiSolutionsDesc">Custom machine learning models, chatbots, and intelligent process automation.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🔗</div><div><h4 data-i18n="vpn">VPN & Secure Connectivity</h4><p data-i18n="vpnDesc">Enterprise-grade VPN solutions that keep remote work sessions secure and reliable.</p></div></div>
+      <div class="svc-item"><div class="svc-ico">🎥</div><div><h4 data-i18n="collabTools">Collaboration Tools</h4><p data-i18n="collabToolsDesc">Deployment and management of Teams, Zoom, and other unified communications platforms.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ PROCESS (unchanged) ═══ -->
 <section class="sec sec-alt">
   <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto 3rem;">
-    <div class="eyebrow eyebrow-center">How We Engage</div>
-    <h2 class="sec-h" style="text-align:center;">Simple, <em>transparent</em><br/>engagement models</h2>
+    <div class="eyebrow eyebrow-center" data-i18n="engagementEyebrow">How We Engage</div>
+    <h2 class="sec-h" style="text-align:center;"><span data-i18n="engagementTitlePart1">Simple, </span><em><span data-i18n="engagementTitlePart2">transparent</span></em><br/><span data-i18n="engagementTitlePart3">engagement models</span></h2>
   </div>
   <div class="process-steps reveal">
-    <div class="step"><div class="step-n">01</div><div class="step-ico">💬</div><h4>Free Consultation</h4><p>A no-cost 60-minute session to understand your needs, current setup, and goals — no sales pressure, just a real conversation.</p></div>
-    <div class="step"><div class="step-n">02</div><div class="step-ico">📄</div><h4>Tailored Proposal</h4><p>We deliver a detailed, transparent proposal with fixed pricing or retainer options — no hidden fees, ever.</p></div>
-    <div class="step"><div class="step-n">03</div><div class="step-ico">✅</div><h4>Onboarding</h4><p>A structured onboarding process that gets us integrated with your team within days, not weeks.</p></div>
-    <div class="step"><div class="step-n">04</div><div class="step-ico">🔄</div><h4>Ongoing Partnership</h4><p>Monthly reporting, quarterly reviews, and a dedicated account manager who knows your business inside out.</p></div>
+    <div class="step"><div class="step-n">01</div><div class="step-ico">💬</div><h4 data-i18n="engagementStep1">Free Consultation</h4><p data-i18n="engagementStep1Desc">A no-cost 60-minute session to understand your needs, current setup, and goals — no sales pressure, just a real conversation.</p></div>
+    <div class="step"><div class="step-n">02</div><div class="step-ico">📄</div><h4 data-i18n="engagementStep2">Tailored Proposal</h4><p data-i18n="engagementStep2Desc">We deliver a detailed, transparent proposal with fixed pricing or retainer options — no hidden fees, ever.</p></div>
+    <div class="step"><div class="step-n">03</div><div class="step-ico">✅</div><h4 data-i18n="engagementStep3">Onboarding</h4><p data-i18n="engagementStep3Desc">A structured onboarding process that gets us integrated with your team within days, not weeks.</p></div>
+    <div class="step"><div class="step-n">04</div><div class="step-ico">🔄</div><h4 data-i18n="engagementStep4">Ongoing Partnership</h4><p data-i18n="engagementStep4Desc">Monthly reporting, quarterly reviews, and a dedicated account manager who knows your business inside out.</p></div>
   </div>
 </section>
 
-<!-- ═══ TESTIMONIALS (unchanged) ═══ -->
 <section class="sec">
   <div class="reveal" style="text-align:center;">
-    <div class="eyebrow eyebrow-center">Client Stories</div>
-    <h2 class="sec-h" style="text-align:center;">What our clients<br/><em>say about us</em></h2>
+    <div class="eyebrow eyebrow-center" data-i18n="testimonialsEyebrow">Client Stories</div>
+    <h2 class="sec-h" style="text-align:center;"><span data-i18n="testimonialsTitlePart1">What our clients</span><br/><em><span data-i18n="testimonialsTitlePart2">say about us</span></em></h2>
   </div>
   <div class="testi-grid">
-    <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><div class="testi-quote">"</div><p class="testi-text">Their managed IT service has transformed our operations. We used to lose half a day a week to IT issues. Now it just works.</p><div><div class="testi-author">Anil Maharjan</div><div class="testi-role">Operations Manager, Kathmandu Retail Group</div></div></div>
-    <div class="testi-card reveal" data-delay="120"><div class="testi-stars">★★★★★</div><div class="testi-quote">"</div><p class="testi-text">The security team identified and patched vulnerabilities in days. Their communication was excellent and they spoke our language — literally and technically.</p><div><div class="testi-author">Priya Rana</div><div class="testi-role">IT Director, Everest Financial Services</div></div></div>
-    <div class="testi-card reveal" data-delay="240"><div class="testi-stars">★★★★★</div><div class="testi-quote">"</div><p class="testi-text">Remote worker setup was seamless. All 45 employees were on VDI within a week. Productivity actually went up after the transition.</p><div><div class="testi-author">Roshan Gurung</div><div class="testi-role">CEO, Summit Analytics</div></div></div>
+    <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><div class="testi-quote">"</div><p class="testi-text" data-i18n="servicesTestimonial1Text">Their managed IT service has transformed our operations. We used to lose half a day a week to IT issues. Now it just works.</p><div><div class="testi-author" data-i18n="servicesTestimonial1Name">Anil Maharjan</div><div class="testi-role" data-i18n="servicesTestimonial1Role">Operations Manager, Kathmandu Retail Group</div></div></div>
+    <div class="testi-card reveal" data-delay="120"><div class="testi-stars">★★★★★</div><div class="testi-quote">"</div><p class="testi-text" data-i18n="servicesTestimonial2Text">The security team identified and patched vulnerabilities in days. Their communication was excellent and they spoke our language — literally and technically.</p><div><div class="testi-author" data-i18n="servicesTestimonial2Name">Priya Rana</div><div class="testi-role" data-i18n="servicesTestimonial2Role">IT Director, Everest Financial Services</div></div></div>
+    <div class="testi-card reveal" data-delay="240"><div class="testi-stars">★★★★★</div><div class="testi-quote">"</div><p class="testi-text" data-i18n="servicesTestimonial3Text">Remote worker setup was seamless. All 45 employees were on VDI within a week. Productivity actually went up after the transition.</p><div><div class="testi-author" data-i18n="servicesTestimonial3Name">Roshan Gurung</div><div class="testi-role" data-i18n="servicesTestimonial3Role">CEO, Summit Analytics</div></div></div>
   </div>
 </section>
 
-<!-- ═══ CTA (unchanged) ═══ -->
 <section class="sec sec-dark" style="text-align:center;">
   <div class="reveal">
-    <div class="eyebrow eyebrow-center">Get Started</div>
-    <h2 class="sec-h" style="margin-bottom: 1rem;">Which service does<br/>your business <em>need?</em></h2>
-    <p class="sec-sub" style="margin-bottom: 2rem;">Book a free consultation and we'll map the right services to your exact situation.</p>
-    <a href="contact.html" class="btn-dark" style="background: var(--blue); color: white;">Book a free consultation →</a>
+    <div class="eyebrow eyebrow-center" data-i18n="ctaEyebrow">Get Started</div>
+    <h2 class="sec-h" style="margin-bottom: 1rem;"><span data-i18n="servicesCtaTitle">Which service does</span><br/><span data-i18n="servicesCtaTitle2">your business </span><em><span data-i18n="servicesCtaTitle3">need?</span></em></h2>
+    <p class="sec-sub" style="margin-bottom: 2rem;" data-i18n="servicesCtaDesc">Book a free consultation and we'll map the right services to your exact situation.</p>
+    <a href="contact.html" class="btn-dark" style="background: var(--blue); color: white;" data-i18n="servicesCtaButton">Book a free consultation →</a>
   </div>
 </section>
 
-<!-- ═══ FOOTER (unchanged) ═══ -->
 <footer class="footer">
   <div class="footer-top">
-    <div class="footer-brand">
-      <div class="f-logo"><div class="nav-logo-mark" style="width:34px;height:34px;border-radius:7px;"><svg viewBox="0 0 56 56" fill="none" style="width:19px;height:19px;"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="3" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="1.5" fill="#fff"/></svg></div>Evelynx Solutions</div>
-      <p>A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.</p>
-      <div class="footer-social"><a href="#" class="footer-social-link">in</a><a href="#" class="footer-social-link">f</a><a href="https://wa.me/9779768969780" class="footer-social-link">💬</a></div>
-    </div>
-    <div class="footer-col"><h5>Solutions</h5><a href="solutions.html">Software Development</a><a href="solutions.html">Cloud Solutions</a><a href="solutions.html">Cybersecurity</a><a href="solutions.html">AI & ML</a><a href="solutions.html">UI/UX Design</a></div>
-    <div class="footer-col"><h5>Company</h5><a href="about.html">About us</a><a href="services.html">Services</a><a href="why-us.html">Why Us</a><a href="contact.html">Contact</a></div>
-    <div class="footer-col"><h5>Legal</h5><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Companies Act 2063</a><a href="#">Labour Act 2074</a></div>
+    <div class="footer-brand"><div class="f-logo"><div class="nav-logo-mark" style="width:34px;height:34px;border-radius:7px;"><svg viewBox="0 0 56 56" fill="none" style="width:19px;height:19px;"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="3" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="1.5" fill="#fff"/></svg></div>Evelynx Solutions</div><p data-i18n="footerTagline">A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.</p><div class="footer-social"><a href="#" class="footer-social-link">in</a><a href="#" class="footer-social-link">f</a><a href="https://wa.me/9779768969780" class="footer-social-link">💬</a></div></div>
+    <div class="footer-col"><h5 data-i18n="footerSolutions">Solutions</h5><a href="solutions.html" data-i18n="softDev">Software Development</a><a href="solutions.html" data-i18n="cloud">Cloud Solutions</a><a href="solutions.html" data-i18n="cyber">Cybersecurity</a><a href="solutions.html" data-i18n="aiMl">AI & ML</a><a href="solutions.html" data-i18n="uiux">UI/UX Design</a></div>
+    <div class="footer-col"><h5 data-i18n="footerCompany">Company</h5><a href="about.html" data-i18n="about">About us</a><a href="services.html" data-i18n="services">Services</a><a href="why-us.html" data-i18n="whyUs">Why Us</a><a href="contact.html" data-i18n="contact">Contact</a></div>
+    <div class="footer-col"><h5 data-i18n="footerLegal">Legal</h5><a href="#" data-i18n="privacyPolicy">Privacy Policy</a><a href="#" data-i18n="terms">Terms of Service</a><a href="#" data-i18n="companiesAct">Companies Act 2063</a><a href="#" data-i18n="labourAct">Labour Act 2074</a></div>
   </div>
-  <div class="footer-bottom"><p>© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.</p><div class="footer-tags"><span class="f-tag">OCR Registered</span><span class="f-tag">PAN Holder</span><span class="f-tag">SSF Compliant</span></div></div>
+  <div class="footer-bottom"><p data-i18n="copyright">© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.</p><div class="footer-tags"><span class="f-tag" data-i18n="ocr">OCR Registered</span><span class="f-tag" data-i18n="pan">PAN Holder</span><span class="f-tag" data-i18n="ssf">SSF Compliant</span></div></div>
 </footer>
 
-<a href="tel:+9779768969780" class="mob-call">📞 +977-9768969780</a>
+<a href="tel:+9779768969780" class="mob-call" data-i18n="mobCall">📞 +977-9768969780</a>
 <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-<div class="chat-float" id="chatFloat"><div class="chat-pop" id="chatPop"><button class="chat-pop-close" id="chatClose">✕</button><h5>How can we help?</h5><a href="https://wa.me/9779768969780" target="_blank">💬 WhatsApp Chat</a><a href="mailto:info@evelynxsolutions.com.np">✉️ Email Us</a><a href="tel:+9779768969780">📞 Call Now</a></div><button class="chat-float-btn" id="chatBtn">💬</button></div>
-<div class="cookie-bar" id="cookieBar"><span>🍪 We use cookies to improve your experience. <a href="#">Privacy Policy</a>.</span><button class="cookie-accept" id="cookieAccept">Accept</button></div>
+<div class="chat-float" id="chatFloat"><div class="chat-pop" id="chatPop"><button class="chat-pop-close" id="chatClose">✕</button><h5 data-i18n="chatHelp">How can we help?</h5><a href="https://wa.me/9779768969780" target="_blank" data-i18n="chatWhatsApp">💬 WhatsApp Chat</a><a href="mailto:info@evelynxsolutions.com.np" data-i18n="chatEmail">✉️ Email Us</a><a href="tel:+9779768969780" data-i18n="chatCall">📞 Call Now</a></div><button class="chat-float-btn" id="chatBtn">💬</button></div>
+<div class="cookie-bar" id="cookieBar"><span><span data-i18n="cookieText">🍪 We use cookies to improve your experience.</span> <a href="#" data-i18n="cookiePolicy">Privacy Policy</a>.</span><button class="cookie-accept" id="cookieAccept" data-i18n="cookieAccept">Accept</button></div>
 
 <script src="main.js"></script>
+<script>
+const translations = {
+  en: {
+    home: "Home", about: "About", services: "Services", solutions: "Solutions", whyUs: "Why Us", contact: "Contact",
+    servicesHeroEyebrow: "What We Offer", servicesHeroLine1: "Full‑spectrum IT services,", servicesHeroLine2: "one trusted partner",
+    servicesHeroDesc: "From daily IT support to enterprise-scale transformation — every service you need, delivered with the consistency of a world-class team.",
+    statsSupport: "Support Coverage", serviceCategories: "Service Categories", clientSatisfaction: "Client Satisfaction",
+    servicesEyebrow: "Service Lines", servicesTitlePart1: "Every layer of your", servicesTitlePart2: "IT infrastructure", servicesTitlePart3: "covered",
+    servicesSub: "Three core pillars. Dozens of specialisms. One SLA.",
+    infra: "Infrastructure", endpointMgmt: "Endpoint Management", endpointMgmtDesc: "Centralized management of desktops, laptops, and mobile devices with patching, inventory, and policy control.",
+    itProcurement: "IT Procurement", itProcurementDesc: "Hardware and software sourcing, vendor negotiation, and lifecycle management for your IT assets.",
+    networkMgmt: "Network Management", networkMgmtDesc: "Proactive monitoring, configuration, and optimization of your LAN, WAN, and VPN connections.",
+    itOperations: "IT Operations", itOperationsDesc: "Day-to-day IT operations management, ensuring systems run smoothly and efficiently at all times.",
+    cloudBackup: "Cloud Backup & Disaster Recovery", cloudBackupDesc: "Automated backups and rapid recovery plans to keep your business running after any disruption.",
+    ms365: "Microsoft 365 for Business", ms365Desc: "Migration, setup, and management of Microsoft 365 — email, Teams, SharePoint, and more.",
+    managedFirewall: "Managed Firewall Services", managedFirewallDesc: "24/7 firewall monitoring, rule management, and intrusion prevention to keep threats out.",
+    managedHelpdesk: "Managed Helpdesk", managedHelpdeskDesc: "Multi-channel IT support desk for your employees, with fast resolution and friendly service.",
+    security: "Security", endpointProtection: "Endpoint Protection", endpointProtectionDesc: "Next-gen antivirus, anti-malware, and device control to secure all endpoints across your org.",
+    riskAnalysis: "IT Security Risk Analysis", riskAnalysisDesc: "Comprehensive assessment of your IT environment to identify vulnerabilities and compliance gaps.",
+    ransomwareProtection: "Ransomware Protection", ransomwareProtectionDesc: "Multi-layered defense and recovery strategies specifically designed to stop ransomware attacks.",
+    securityTraining: "Security Awareness Training", securityTrainingDesc: "Employee programs that transform your staff into the first line of defense against cyber threats.",
+    vulnerabilityAssessment: "Vulnerability Assessment", vulnerabilityAssessmentDesc: "Regular scanning and penetration testing to find and fix security holes before attackers do.",
+    identityMgmt: "Identity & Access Management", identityMgmtDesc: "Secure access controls and privilege management across your entire organization.",
+    complianceAudits: "Compliance Audits", complianceAuditsDesc: "ISO 27001, PCI-DSS, GDPR, and Nepal Privacy Act 2075 compliance assessments and documentation.",
+    socMonitoring: "24/7 SOC Monitoring", socMonitoringDesc: "Round-the-clock security operations center monitoring with immediate incident response.",
+    remoteWorkers: "Remote Workers", virtualDesktops: "Virtual Desktop Solutions", virtualDesktopsDesc: "Secure, cloud-based virtual desktops that allow your team to work from anywhere on any device.",
+    businessEmail: "Business Email Management", businessEmailDesc: "Professional email hosting, spam filtering, and archiving for uninterrupted communication.",
+    hardwareSupport: "Hardware Support Services", hardwareSupportDesc: "On-site and remote hardware troubleshooting, repair, and maintenance for all employee devices.",
+    remoteFileAccess: "Remote File Access", remoteFileAccessDesc: "Secure, encrypted access to company files and shared drives from anywhere in the world.",
+    mobileDeviceMgmt: "Mobile Device Management", mobileDeviceMgmtDesc: "Enroll, secure, and manage smartphones and tablets used by your team, anywhere.",
+    aiSolutions: "AI-Powered Solutions", aiSolutionsDesc: "Custom machine learning models, chatbots, and intelligent process automation.",
+    vpn: "VPN & Secure Connectivity", vpnDesc: "Enterprise-grade VPN solutions that keep remote work sessions secure and reliable.",
+    collabTools: "Collaboration Tools", collabToolsDesc: "Deployment and management of Teams, Zoom, and other unified communications platforms.",
+    engagementEyebrow: "How We Engage", engagementTitlePart1: "Simple, ", engagementTitlePart2: "transparent", engagementTitlePart3: "engagement models",
+    engagementStep1: "Free Consultation", engagementStep1Desc: "A no-cost 60-minute session to understand your needs, current setup, and goals — no sales pressure, just a real conversation.",
+    engagementStep2: "Tailored Proposal", engagementStep2Desc: "We deliver a detailed, transparent proposal with fixed pricing or retainer options — no hidden fees, ever.",
+    engagementStep3: "Onboarding", engagementStep3Desc: "A structured onboarding process that gets us integrated with your team within days, not weeks.",
+    engagementStep4: "Ongoing Partnership", engagementStep4Desc: "Monthly reporting, quarterly reviews, and a dedicated account manager who knows your business inside out.",
+    testimonialsEyebrow: "Client Stories", testimonialsTitlePart1: "What our clients", testimonialsTitlePart2: "say about us",
+    servicesTestimonial1Text: "Their managed IT service has transformed our operations. We used to lose half a day a week to IT issues. Now it just works.",
+    servicesTestimonial1Name: "Anil Maharjan", servicesTestimonial1Role: "Operations Manager, Kathmandu Retail Group",
+    servicesTestimonial2Text: "The security team identified and patched vulnerabilities in days. Their communication was excellent and they spoke our language — literally and technically.",
+    servicesTestimonial2Name: "Priya Rana", servicesTestimonial2Role: "IT Director, Everest Financial Services",
+    servicesTestimonial3Text: "Remote worker setup was seamless. All 45 employees were on VDI within a week. Productivity actually went up after the transition.",
+    servicesTestimonial3Name: "Roshan Gurung", servicesTestimonial3Role: "CEO, Summit Analytics",
+    ctaEyebrow: "Get Started", servicesCtaTitle: "Which service does", servicesCtaTitle2: "your business ", servicesCtaTitle3: "need?",
+    servicesCtaDesc: "Book a free consultation and we'll map the right services to your exact situation.",
+    servicesCtaButton: "Book a free consultation →",
+    footerTagline: "A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.",
+    footerSolutions: "Solutions", footerCompany: "Company", footerLegal: "Legal",
+    softDev: "Software Development", cloud: "Cloud Solutions", cyber: "Cybersecurity", aiMl: "AI & ML", uiux: "UI/UX Design",
+    privacyPolicy: "Privacy Policy", terms: "Terms of Service", companiesAct: "Companies Act 2063", labourAct: "Labour Act 2074",
+    copyright: "© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.",
+    ocr: "OCR Registered", pan: "PAN Holder", ssf: "SSF Compliant",
+    cookieText: "🍪 We use cookies to improve your experience.", cookiePolicy: "Privacy Policy", cookieAccept: "Accept",
+    chatHelp: "How can we help?", chatWhatsApp: "💬 WhatsApp Chat", chatEmail: "✉️ Email Us", chatCall: "📞 Call Now",
+    mobCall: "📞 +977-9768969780"
+  },
+  ne: {
+    home: "गृहपृष्ठ", about: "हाम्रो बारेमा", services: "सेवाहरू", solutions: "समाधानहरू", whyUs: "किन हामी", contact: "सम्पर्क",
+    servicesHeroEyebrow: "हामी के प्रस्ताव गर्छौं", servicesHeroLine1: "पूर्ण-स्पेक्ट्रम आईटी सेवाहरू,", servicesHeroLine2: "एक भरपर्दो साझेदार",
+    servicesHeroDesc: "दैनिक आईटी समर्थनदेखि उद्यम-स्तरीय रूपान्तरणसम्म — तपाईंलाई चाहिने हरेक सेवा, विश्व-स्तरीय टोलीको स्थिरताका साथ प्रदान गरिएको।",
+    statsSupport: "समर्थन कभरेज", serviceCategories: "सेवा कोटीहरू", clientSatisfaction: "ग्राहक सन्तुष्टि",
+    servicesEyebrow: "सेवा लाइनहरू", servicesTitlePart1: "तपाईंको आईटी पूर्वाधारको", servicesTitlePart2: "हरेक तह", servicesTitlePart3: "कभर गरियो",
+    servicesSub: "तीन मुख्य स्तम्भहरू। दर्जनौं विशेषज्ञताहरू। एउटै SLA।",
+    infra: "पूर्वाधार", endpointMgmt: "एन्डपोइन्ट व्यवस्थापन", endpointMgmtDesc: "डेस्कटप, ल्यापटप, र मोबाइल उपकरणहरूको केन्द्रीकृत व्यवस्थापन प्याचिङ, इन्भेन्टरी, र नीति नियन्त्रणको साथ।",
+    itProcurement: "आईटी खरिद", itProcurementDesc: "तपाईंको आईटी सम्पत्तिहरूको लागि हार्डवेयर र सफ्टवेयर स्रोत, विक्रेता वार्ता, र जीवनचक्र व्यवस्थापन।",
+    networkMgmt: "नेटवर्क व्यवस्थापन", networkMgmtDesc: "तपाईंको LAN, WAN, र VPN जडानहरूको सक्रिय अनुगमन, कन्फिगरेसन, र अप्टिमाइजेसन।",
+    itOperations: "आईटी सञ्चालन", itOperationsDesc: "दैनिक आईटी सञ्चालन व्यवस्थापन, सुनिश्चित गर्दै प्रणालीहरू सधैं सहज र कुशलतापूर्वक चल्छन्।",
+    cloudBackup: "क्लाउड ब्याकअप र डिजास्टर रिकभरी", cloudBackupDesc: "स्वचालित ब्याकअपहरू र द्रुत पुनरुत्थान योजनाहरू तपाईंको व्यवसायलाई कुनै पनि अवरोध पछि चलिरहन राख्न।",
+    ms365: "व्यवसायको लागि Microsoft 365", ms365Desc: "Microsoft 365 को माइग्रेसन, सेटअप, र व्यवस्थापन — इमेल, Teams, SharePoint, र थप।",
+    managedFirewall: "व्यवस्थित फायरवाल सेवाहरू", managedFirewallDesc: "२४/७ फायरवाल अनुगमन, नियम व्यवस्थापन, र घुसपैठ रोकथाम खतराहरू बाहिर राख्न।",
+    managedHelpdesk: "व्यवस्थित हेल्पडेस्क", managedHelpdeskDesc: "तपाईंका कर्मचारीहरूको लागि बहु-च्यानल आईटी समर्थन डेस्क, द्रुत समाधान र मैत्रीपूर्ण सेवाको साथ।",
+    security: "सुरक्षा", endpointProtection: "एन्डपोइन्ट सुरक्षा", endpointProtectionDesc: "नेक्स्ट-जेन एन्टिभाइरस, एन्टि-मालवेयर, र उपकरण नियन्त्रण तपाईंको संगठनभरि सबै एन्डपोइन्टहरू सुरक्षित गर्न।",
+    riskAnalysis: "आईटी सुरक्षा जोखिम विश्लेषण", riskAnalysisDesc: "कमजोरीहरू र अनुपालन अन्तरहरू पहिचान गर्न तपाईंको आईटी वातावरणको व्यापक मूल्याङ्कन।",
+    ransomwareProtection: "र्यान्समवेयर सुरक्षा", ransomwareProtectionDesc: "विशेष रूपमा र्यान्समवेयर आक्रमणहरू रोक्नको लागि डिजाइन गरिएको बहु-स्तरीय रक्षा र पुनरुत्थान रणनीतिहरू।",
+    securityTraining: "सुरक्षा जागरूकता तालिम", securityTrainingDesc: "कर्मचारी कार्यक्रमहरू जसले तपाईंको टोलीलाई साइबर खतराहरू विरुद्धको पहिलो रक्षा लाइनमा रूपान्तरण गर्दछ।",
+    vulnerabilityAssessment: "कमजोरी मूल्याङ्कन", vulnerabilityAssessmentDesc: "नियमित स्क्यानिङ र पेनिट्रेसन टेस्टिङ आक्रमणकारीहरू भन्दा पहिले सुरक्षा प्वालहरू फेला पार्न र ठीक गर्न।",
+    identityMgmt: "पहिचान र पहुँच व्यवस्थापन", identityMgmtDesc: "तपाईंको सम्पूर्ण संगठनभरि सुरक्षित पहुँच नियन्त्रणहरू र विशेषाधिकार व्यवस्थापन।",
+    complianceAudits: "अनुपालन अडिटहरू", complianceAuditsDesc: "ISO 27001, PCI-DSS, GDPR, र नेपाल गोपनीयता ऐन २०७५ अनुपालन मूल्याङ्कन र कागजात।",
+    socMonitoring: "२४/७ एसओसी अनुगमन", socMonitoringDesc: "तत्काल घटना प्रतिक्रियाको साथ चौबिसै घण्टा सुरक्षा सञ्चालन केन्द्र अनुगमन।",
+    remoteWorkers: "टाढाका कामदारहरू", virtualDesktops: "भर्चुअल डेस्कटप समाधानहरू", virtualDesktopsDesc: "सुरक्षित, क्लाउड-आधारित भर्चुअल डेस्कटपहरू जसले तपाईंको टोलीलाई कुनै पनि उपकरणबाट कहीं पनि काम गर्न अनुमति दिन्छ।",
+    businessEmail: "व्यवसाय इमेल व्यवस्थापन", businessEmailDesc: "निर्बाध संचारको लागि व्यावसायिक इमेल होस्टिङ, स्प्याम फिल्टरिङ, र अभिलेखीकरण।",
+    hardwareSupport: "हार्डवेयर समर्थन सेवाहरू", hardwareSupportDesc: "सबै कर्मचारी उपकरणहरूको लागि अन-साइट र टाढाको हार्डवेयर समस्या निवारण, मर्मत, र मर्मत।",
+    remoteFileAccess: "टाढाको फाइल पहुँच", remoteFileAccessDesc: "विश्वको कुनै पनि स्थानबाट कम्पनी फाइलहरू र साझा ड्राइभहरूमा सुरक्षित, एन्क्रिप्टेड पहुँच।",
+    mobileDeviceMgmt: "मोबाइल उपकरण व्यवस्थापन", mobileDeviceMgmtDesc: "तपाईंको टोलीद्वारा प्रयोग हुने स्मार्टफोन र ट्याब्लेटहरू कहीं पनि दर्ता, सुरक्षित, र व्यवस्थापन गर्नुहोस्।",
+    aiSolutions: "एआई-संचालित समाधानहरू", aiSolutionsDesc: "कस्टम मेसिन लर्निङ मोडेलहरू, च्याटबोटहरू, र बौद्धिक प्रक्रिया स्वचालन।",
+    vpn: "भीपीएन र सुरक्षित जडान", vpnDesc: "उद्यम-ग्रेड भीपीएन समाधानहरू जसले टाढाको काम सत्रहरू सुरक्षित र भरपर्दो राख्छन्।",
+    collabTools: "सहकार्य उपकरणहरू", collabToolsDesc: "Teams, Zoom, र अन्य एकीकृत संचार प्लेटफर्महरूको परिनियोजन र व्यवस्थापन।",
+    engagementEyebrow: "हामी कसरी संलग्न हुन्छौं", engagementTitlePart1: "सरल, ", engagementTitlePart2: "पारदर्शी", engagementTitlePart3: "संलग्नता मोडेलहरू",
+    engagementStep1: "नि:शुल्क परामर्श", engagementStep1Desc: "तपाईंको आवश्यकताहरू, हालको सेटअप, र लक्ष्यहरू बुझ्नको लागि कुनै लागत नभएको ६०-मिनेटको सत्र — कुनै बिक्री दबाब छैन, केवल एक वास्तविक कुराकानी।",
+    engagementStep2: "अनुकूल प्रस्ताव", engagementStep2Desc: "हामी निश्चित मूल्य निर्धारण वा रिटेनर विकल्पहरूको साथ विस्तृत, पारदर्शी प्रस्ताव प्रदान गर्छौं — कहिल्यै कुनै लुकेको शुल्क छैन।",
+    engagementStep3: "अनबोर्डिङ", engagementStep3Desc: "एक संरचित अनबोर्डिङ प्रक्रिया जसले हामीलाई दिनहरूमा तपाईंको टोलीसँग एकीकृत गर्दछ, हप्ताहरूमा होइन।",
+    engagementStep4: "निरन्तर साझेदारी", engagementStep4Desc: "मासिक रिपोर्टिङ, त्रैमासिक समीक्षा, र एक समर्पित खाता प्रबन्धक जसले तपाईंको व्यवसाय भित्रबाट जान्दछ।",
+    testimonialsEyebrow: "ग्राहक कथाहरू", testimonialsTitlePart1: "हाम्रा ग्राहकहरू", testimonialsTitlePart2: "हाम्रो बारेमा के भन्छन्",
+    servicesTestimonial1Text: "तिनीहरूको व्यवस्थित आईटी सेवाले हाम्रो सञ्चालन परिवर्तन गरेको छ। हामी हप्तामा आधा दिन आईटी समस्याहरूमा गुमाउँथ्यौं। अब यो काम गर्छ।",
+    servicesTestimonial1Name: "अनिल महर्जन", servicesTestimonial1Role: "सञ्चालन प्रबन्धक, काठमाडौं रिटेल ग्रुप",
+    servicesTestimonial2Text: "सुरक्षा टोलीले दिनहरूमै कमजोरीहरू पहिचान र प्याच गर्यो। तिनीहरूको संचार उत्कृष्ट थियो र तिनीहरूले हाम्रो भाषा बोले — शाब्दिक र प्राविधिक रूपमा।",
+    servicesTestimonial2Name: "प्रिया राणा", servicesTestimonial2Role: "आईटी निर्देशक, एभरेस्ट वित्तीय सेवाहरू",
+    servicesTestimonial3Text: "टाढाको कामदार सेटअप निर्बाध थियो। सबै ४५ कर्मचारीहरू एक हप्ता भित्र भीडीआईमा थिए। संक्रमण पछि उत्पादकता वास्तवमा बढ्यो।",
+    servicesTestimonial3Name: "रोशन गुरुङ", servicesTestimonial3Role: "सीईओ, समिट एनालिटिक्स",
+    ctaEyebrow: "सुरु गर्नुहोस्", servicesCtaTitle: "तपाईंको व्यवसायलाई", servicesCtaTitle2: "कुन सेवा", servicesCtaTitle3: "चाहिन्छ?",
+    servicesCtaDesc: "नि:शुल्क परामर्श बुक गर्नुहोस् र हामी तपाईंको सही परिस्थितिमा उपयुक्त सेवाहरू म्याप गर्नेछौं।",
+    servicesCtaButton: "नि:शुल्क परामर्श बुक गर्नुहोस् →",
+    footerTagline: "नेपाल दर्ता गरिएको प्राइभेट लिमिटेड कम्पनीले काठमाडौंबाट सफ्टवेयर, क्लाउड, साइबर सुरक्षा र डिजिटल रूपान्तरण प्रदान गर्दै।",
+    footerSolutions: "समाधानहरू", footerCompany: "कम्पनी", footerLegal: "कानूनी",
+    softDev: "सफ्टवेयर विकास", cloud: "क्लाउड समाधानहरू", cyber: "साइबर सुरक्षा", aiMl: "एआई र एमएल", uiux: "UI/UX डिजाइन",
+    privacyPolicy: "गोपनीयता नीति", terms: "सेवा सर्तहरू", companiesAct: "कम्पनी ऐन २०६३", labourAct: "श्रम ऐन २०७४",
+    copyright: "© २०८१ इभलिन्क्स समाधानहरू प्राइभेट लिमिटेड · काठमाडौं, नेपाल · सबै अधिकार सुरक्षित।",
+    ocr: "OCR दर्ता", pan: "PAN धारक", ssf: "SSF अनुपालित",
+    cookieText: "🍪 हामी तपाईंको अनुभव सुधार गर्न कुकीहरू प्रयोग गर्छौं।", cookiePolicy: "गोपनीयता नीति", cookieAccept: "स्वीकार गर्नुहोस्",
+    chatHelp: "हामी कसरी मद्दत गर्न सक्छौं?", chatWhatsApp: "💬 व्हाट्सएप च्याट", chatEmail: "✉️ इमेल गर्नुहोस्", chatCall: "📞 अहिले कल गर्नुहोस्",
+    mobCall: "📞 +९७७-९७६८९६९७८०"
+  }
+};
+function translatePage(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      if (el.placeholder !== undefined) el.placeholder = translations[lang][key];
+      else {
+        const children = el.children;
+        if (children.length === 0) el.innerText = translations[lang][key];
+        else {
+          const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+          let textNode;
+          while (textNode = walker.nextNode()) {
+            if (textNode.parentNode === el && textNode.textContent.trim() !== "") {
+              textNode.textContent = translations[lang][key];
+              break;
+            }
+          }
+        }
+      }
+    }
+  });
+  const langBtn = document.getElementById('langBtn');
+  if (langBtn) langBtn.innerHTML = lang === 'ne' ? '🇬🇧 English' : '🇳🇵 नेपाली';
+  localStorage.setItem('preferredLanguage', lang);
+}
+function initTheme() {
+  const themeToggle = document.getElementById('themeToggle');
+  if (!themeToggle) return;
+  const storedTheme = localStorage.getItem('theme') || 'dark';
+  if (storedTheme === 'light') { document.body.classList.add('light-mode'); themeToggle.innerHTML = '☀️'; }
+  else themeToggle.innerHTML = '🌙';
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    const isLight = document.body.classList.contains('light-mode');
+    themeToggle.innerHTML = isLight ? '☀️' : '🌙';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+  translatePage(savedLang);
+  const langBtn = document.getElementById('langBtn');
+  if (langBtn) langBtn.addEventListener('click', () => {
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const newLang = currentLang === 'en' ? 'ne' : 'en';
+    translatePage(newLang);
+  });
+  initTheme();
+});
+</script>
 </body>
 </html>

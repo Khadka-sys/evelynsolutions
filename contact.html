@@ -14,58 +14,56 @@
 
 <div id="prog"></div>
 
-<!-- ═══ NAV ═══ -->
 <header class="nav" id="nav">
   <a href="index.html" class="nav-logo">
     <div class="nav-logo-mark"><svg viewBox="0 0 56 56" fill="none"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="4" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="2" fill="#fff"/></svg></div>
     Evelynx
   </a>
   <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="solutions.html">Solutions</a>
-    <a href="why-us.html">Why Us</a>
+    <a href="index.html" data-i18n="home">Home</a>
+    <a href="about.html" data-i18n="about">About</a>
+    <a href="services.html" data-i18n="services">Services</a>
+    <a href="solutions.html" data-i18n="solutions">Solutions</a>
+    <a href="why-us.html" data-i18n="whyUs">Why Us</a>
   </nav>
   <div class="nav-right">
     <button class="nav-lang" id="langBtn">🇳🇵 नेपाली</button>
-    <a href="contact.html" class="nav-cta" style="background: white; color: black;">Contact us</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Light/Dark mode">🌙</button>
+    <a href="contact.html" class="nav-cta" data-i18n="contact">Contact us</a>
   </div>
   <button class="nav-ham" id="hamBtn"><span></span><span></span><span></span></button>
 </header>
 <div class="mob-menu" id="mobMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="solutions.html">Solutions</a>
-  <a href="why-us.html">Why Us</a>
-  <a href="contact.html">Contact</a>
+  <a href="index.html" data-i18n="home">Home</a>
+  <a href="about.html" data-i18n="about">About</a>
+  <a href="services.html" data-i18n="services">Services</a>
+  <a href="solutions.html" data-i18n="solutions">Solutions</a>
+  <a href="why-us.html" data-i18n="whyUs">Why Us</a>
+  <a href="contact.html" data-i18n="contact">Contact</a>
 </div>
 
-<!-- ═══ CONTACT HERO (minimal) ═══ -->
 <section class="hero" style="min-height: 50vh; padding-bottom: 2rem;">
   <div class="hero-left">
-    <div class="hero-eyebrow">Let's Connect</div>
-    <h1 class="hero-h1">Start your<br/><em>digital journey</em><br/>today</h1>
-    <p class="hero-p">Tell us about your project, challenge, or idea. We'll get back to you within one business day.</p>
+    <div class="hero-eyebrow" data-i18n="contactHeroEyebrow">Let's Connect</div>
+    <h1 class="hero-h1"><span data-i18n="contactHeroLine1">Start your</span><br/><em><span data-i18n="contactHeroLine2">digital journey</span></em><br/><span data-i18n="contactHeroLine3">today</span></h1>
+    <p class="hero-p" data-i18n="contactHeroDesc">Tell us about your project, challenge, or idea. We'll get back to you within one business day.</p>
   </div>
   <div class="hero-right">
-    <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200&q=80&auto=format&fit=crop" alt="Contact"/>
+    <img src="https://picsum.photos/id/1/1200/800" alt="Contact" style="object-fit:cover;width:100%;height:auto;border-radius:32px;"/>
     <div class="hero-overlay"></div>
   </div>
 </section>
 
-<!-- ═══ CONTACT FORM & DETAILS (enhanced version of index contact) ═══ -->
 <section class="sec">
   <div class="contact-wrap reveal">
     <div class="contact-left">
-      <h3>Reach us<br/>at <em>any time</em></h3>
-      <p>Our team is distributed across Kathmandu and available to talk through your requirements — in English or Nepali.</p>
+      <h3><span data-i18n="contactLeftTitle1">Reach us</span><br/><span data-i18n="contactLeftTitle2">at </span><em><span data-i18n="contactLeftTitle3">any time</span></em></h3>
+      <p data-i18n="contactLeftDesc">Our team is distributed across Kathmandu and available to talk through your requirements — in English or Nepali.</p>
       <div class="contact-details">
-        <div class="contact-row"><div class="contact-ico">📧</div><div><p>Email</p><strong>info@evelynxsolutions.com.np</strong></div></div>
-        <div class="contact-row"><div class="contact-ico">📞</div><div><p>Phone / WhatsApp</p><strong>+977-9768969780</strong></div></div>
-        <div class="contact-row"><div class="contact-ico">📍</div><div><p>Office</p><strong>Kathmandu, Nepal (exact address provided upon appointment)</strong></div></div>
-        <div class="contact-row"><div class="contact-ico">🕐</div><div><p>Working hours</p><strong>Sun – Fri, 9:00am – 6:00pm (NPT)</strong></div></div>
+        <div class="contact-row"><div class="contact-ico">📧</div><div><p data-i18n="contactEmailLabel">Email</p><strong>info@evelynxsolutions.com.np</strong></div></div>
+        <div class="contact-row"><div class="contact-ico">📞</div><div><p data-i18n="contactPhoneLabel">Phone / WhatsApp</p><strong>+977-9768969780</strong></div></div>
+        <div class="contact-row"><div class="contact-ico">📍</div><div><p data-i18n="contactOfficeLabel">Office</p><strong>Kathmandu, Nepal</strong></div></div>
+        <div class="contact-row"><div class="contact-ico">🕐</div><div><p data-i18n="contactHoursLabel">Working hours</p><strong data-i18n="contactHours">Sun – Fri, 9:00am – 6:00pm (NPT)</strong></div></div>
       </div>
       <div class="footer-social" style="margin-top: 2rem;">
         <a href="#" class="footer-social-link">in</a>
@@ -76,64 +74,191 @@
     <div class="contact-right">
       <form id="contactForm" action="https://formspree.io/f/xbdbqerg" method="POST">
         <div class="form-row">
-          <div class="form-group"><label>Full name *</label><input type="text" name="name" placeholder="Your name" required/></div>
-          <div class="form-group"><label>Email address *</label><input type="email" name="_replyto" placeholder="you@company.com" required/></div>
+          <div class="form-group"><label data-i18n="formName">Full name</label><input type="text" name="name" placeholder="Your name" data-i18n-placeholder="formNamePlaceholder" required/></div>
+          <div class="form-group"><label data-i18n="formEmail">Email address</label><input type="email" name="_replyto" placeholder="you@company.com" data-i18n-placeholder="formEmailPlaceholder" required/></div>
         </div>
         <div class="form-row">
-          <div class="form-group"><label>Phone</label><input type="tel" name="phone" placeholder="+977-__________"/></div>
-          <div class="form-group"><label>Company</label><input type="text" name="company" placeholder="Company name"/></div>
+          <div class="form-group"><label data-i18n="formPhone">Phone</label><input type="tel" name="phone" placeholder="+977-__________" data-i18n-placeholder="formPhonePlaceholder"/></div>
+          <div class="form-group"><label data-i18n="formCompany">Company</label><input type="text" name="company" placeholder="Company name" data-i18n-placeholder="formCompanyPlaceholder"/></div>
         </div>
         <div class="form-group">
-          <label>Service needed</label>
-          <select name="service">
-            <option value="">Select a service…</option>
-            <option>Software Development</option>
-            <option>Web / Portal Development</option>
-            <option>Mobile App Development</option>
-            <option>Cloud & Infrastructure</option>
-            <option>AI / Machine Learning</option>
-            <option>Cybersecurity</option>
-            <option>UI/UX & Design</option>
-            <option>Digital Marketing</option>
-            <option>IT Consulting</option>
-            <option>IT Hardware</option>
-            <option>Managed IT Services</option>
-            <option>Other</option>
+          <label data-i18n="formService">Service needed</label>
+          <select name="service" data-i18n-select="formServiceOptions">
+            <option value="" data-i18n="formServicePlaceholder">Select a service…</option>
+            <option data-i18n="serviceOpt1">Software Development</option>
+            <option data-i18n="serviceOpt2">Web / Portal Development</option>
+            <option data-i18n="serviceOpt3">Mobile App Development</option>
+            <option data-i18n="serviceOpt4">Cloud & Infrastructure</option>
+            <option data-i18n="serviceOpt5">AI / Machine Learning</option>
+            <option data-i18n="serviceOpt6">Cybersecurity</option>
+            <option data-i18n="serviceOpt7">UI/UX & Design</option>
+            <option data-i18n="serviceOpt8">Digital Marketing</option>
+            <option data-i18n="serviceOpt9">IT Consulting</option>
+            <option data-i18n="serviceOpt10">IT Hardware</option>
+            <option data-i18n="serviceOpt11">Managed IT Services</option>
+            <option data-i18n="serviceOpt12">Other</option>
           </select>
         </div>
-        <div class="form-group"><label>Tell us about your project *</label><textarea name="message" placeholder="Describe your project, timeline and budget…" required></textarea></div>
-        <button type="submit" class="form-submit">Send enquiry →</button>
-        <p class="form-msg" id="formMsg">✓ Thank you — we'll be in touch within 24 hours.</p>
+        <div class="form-group"><label data-i18n="formMessage">Tell us about your project</label><textarea name="message" placeholder="Describe your project, timeline and budget…" data-i18n-placeholder="formMessagePlaceholder" required></textarea></div>
+        <button type="submit" class="form-submit" data-i18n="formSubmit">Send enquiry →</button>
+        <p class="form-msg" id="formMsg" data-i18n="formMsg">Thank you — we'll be in touch within 24 hours.</p>
       </form>
     </div>
   </div>
 </section>
 
-<!-- ═══ MAP / ADDITIONAL INFO (optional) ═══ -->
-<section class="sec-alt" style="text-align: center;">
+<section class="sec sec-alt" style="text-align: center;">
   <div class="reveal">
-    <div class="eyebrow eyebrow-center">Visit Us</div>
-    <h2 class="sec-h" style="margin-bottom: 1rem;">We're based in <em>Kathmandu</em>,<br/>serving all of Nepal</h2>
-    <p>While we work with clients remotely across the country, on‑site visits can be arranged for enterprises in the valley.</p>
+    <div class="eyebrow eyebrow-center" data-i18n="contactMapEyebrow">Visit Us</div>
+    <h2 class="sec-h" style="margin-bottom: 1rem;"><span data-i18n="contactMapTitle1">We're based in </span><em><span data-i18n="contactMapTitle2">Kathmandu</span></em><span data-i18n="contactMapTitle3"></span></h2>
+    <p data-i18n="contactMapDesc">While we work with clients remotely across the country, on‑site visits can be arranged for enterprises in the valley.</p>
   </div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
 <footer class="footer">
   <div class="footer-top">
-    <div class="footer-brand"><div class="f-logo"><div class="nav-logo-mark" style="width:34px;height:34px;"><svg viewBox="0 0 56 56" fill="none" style="width:19px;"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3"/><circle cx="30" cy="46" r="3" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="1.5" fill="#fff"/></svg></div>Evelynx Solutions</div><p>A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.</p><div class="footer-social"><a href="#" class="footer-social-link">in</a><a href="#" class="footer-social-link">f</a><a href="https://wa.me/9779768969780" class="footer-social-link">💬</a></div></div>
-    <div class="footer-col"><h5>Solutions</h5><a href="solutions.html">Software Development</a><a href="solutions.html">Cloud Solutions</a><a href="solutions.html">Cybersecurity</a><a href="solutions.html">AI & ML</a><a href="solutions.html">UI/UX Design</a></div>
-    <div class="footer-col"><h5>Company</h5><a href="about.html">About us</a><a href="services.html">Services</a><a href="why-us.html">Why Us</a><a href="contact.html">Contact</a></div>
-    <div class="footer-col"><h5>Legal</h5><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Companies Act 2063</a><a href="#">Labour Act 2074</a></div>
+    <div class="footer-brand"><div class="f-logo"><div class="nav-logo-mark" style="width:34px;height:34px;border-radius:7px;"><svg viewBox="0 0 56 56" fill="none" style="width:19px;height:19px;"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="3" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="1.5" fill="#fff"/></svg></div>Evelynx Solutions</div><p data-i18n="footerTagline">A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.</p><div class="footer-social"><a href="#" class="footer-social-link">in</a><a href="#" class="footer-social-link">f</a><a href="https://wa.me/9779768969780" class="footer-social-link">💬</a></div></div>
+    <div class="footer-col"><h5 data-i18n="footerSolutions">Solutions</h5><a href="solutions.html" data-i18n="softDev">Software Development</a><a href="solutions.html" data-i18n="cloud">Cloud Solutions</a><a href="solutions.html" data-i18n="cyber">Cybersecurity</a><a href="solutions.html" data-i18n="aiMl">AI & ML</a><a href="solutions.html" data-i18n="uiux">UI/UX Design</a></div>
+    <div class="footer-col"><h5 data-i18n="footerCompany">Company</h5><a href="about.html" data-i18n="about">About us</a><a href="services.html" data-i18n="services">Services</a><a href="why-us.html" data-i18n="whyUs">Why Us</a><a href="contact.html" data-i18n="contact">Contact</a></div>
+    <div class="footer-col"><h5 data-i18n="footerLegal">Legal</h5><a href="#" data-i18n="privacyPolicy">Privacy Policy</a><a href="#" data-i18n="terms">Terms of Service</a><a href="#" data-i18n="companiesAct">Companies Act 2063</a><a href="#" data-i18n="labourAct">Labour Act 2074</a></div>
   </div>
-  <div class="footer-bottom"><p>© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.</p><div class="footer-tags"><span class="f-tag">OCR Registered</span><span class="f-tag">PAN Holder</span><span class="f-tag">SSF Compliant</span></div></div>
+  <div class="footer-bottom"><p data-i18n="copyright">© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.</p><div class="footer-tags"><span class="f-tag" data-i18n="ocr">OCR Registered</span><span class="f-tag" data-i18n="pan">PAN Holder</span><span class="f-tag" data-i18n="ssf">SSF Compliant</span></div></div>
 </footer>
 
-<a href="tel:+9779768969780" class="mob-call">📞 Tap to call — +977-9768969780</a>
+<a href="tel:+9779768969780" class="mob-call" data-i18n="mobCall">📞 Tap to call — +977-9768969780</a>
 <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-<div class="chat-float" id="chatFloat"><div class="chat-pop" id="chatPop"><button class="chat-pop-close" id="chatClose">✕</button><h5>How can we help?</h5><a href="https://wa.me/9779768969780" target="_blank">💬 WhatsApp Chat</a><a href="mailto:info@evelynxsolutions.com.np">✉️ Email Us</a><a href="tel:+9779768969780">📞 Call Now</a></div><button class="chat-float-btn" id="chatBtn">💬</button></div>
-<div class="cookie-bar" id="cookieBar"><span>🍪 We use cookies to improve your experience. <a href="#">Privacy Policy</a>.</span><button class="cookie-accept" id="cookieAccept">Accept</button></div>
+<div class="chat-float" id="chatFloat"><div class="chat-pop" id="chatPop"><button class="chat-pop-close" id="chatClose">✕</button><h5 data-i18n="chatHelp">How can we help?</h5><a href="https://wa.me/9779768969780" target="_blank" data-i18n="chatWhatsApp">💬 WhatsApp Chat</a><a href="mailto:info@evelynxsolutions.com.np" data-i18n="chatEmail">✉️ Email Us</a><a href="tel:+9779768969780" data-i18n="chatCall">📞 Call Now</a></div><button class="chat-float-btn" id="chatBtn">💬</button></div>
+<div class="cookie-bar" id="cookieBar"><span><span data-i18n="cookieText">🍪 We use cookies to improve your experience.</span> <a href="#" data-i18n="cookiePolicy">Privacy Policy</a>.</span><button class="cookie-accept" id="cookieAccept" data-i18n="cookieAccept">Accept</button></div>
 
 <script src="main.js"></script>
+<script>
+const translations = {
+  en: {
+    home: "Home", about: "About", services: "Services", solutions: "Solutions", whyUs: "Why Us", contact: "Contact",
+    contactHeroEyebrow: "Let's Connect", contactHeroLine1: "Start your", contactHeroLine2: "digital journey", contactHeroLine3: "today",
+    contactHeroDesc: "Tell us about your project, challenge, or idea. We'll get back to you within one business day.",
+    contactLeftTitle1: "Reach us", contactLeftTitle2: "at ", contactLeftTitle3: "any time",
+    contactLeftDesc: "Our team is distributed across Kathmandu and available to talk through your requirements — in English or Nepali.",
+    contactEmailLabel: "Email", contactPhoneLabel: "Phone / WhatsApp", contactOfficeLabel: "Office", contactHoursLabel: "Working hours",
+    contactHours: "Sun – Fri, 9:00am – 6:00pm (NPT)",
+    formName: "Full name", formNamePlaceholder: "Your name",
+    formEmail: "Email address", formEmailPlaceholder: "you@company.com",
+    formPhone: "Phone", formPhonePlaceholder: "+977-__________",
+    formCompany: "Company", formCompanyPlaceholder: "Company name",
+    formService: "Service needed", formServicePlaceholder: "Select a service…",
+    serviceOpt1: "Software Development", serviceOpt2: "Web / Portal Development", serviceOpt3: "Mobile App Development",
+    serviceOpt4: "Cloud & Infrastructure", serviceOpt5: "AI / Machine Learning", serviceOpt6: "Cybersecurity",
+    serviceOpt7: "UI/UX & Design", serviceOpt8: "Digital Marketing", serviceOpt9: "IT Consulting",
+    serviceOpt10: "IT Hardware", serviceOpt11: "Managed IT Services", serviceOpt12: "Other",
+    formMessage: "Tell us about your project", formMessagePlaceholder: "Describe your project, timeline and budget…",
+    formSubmit: "Send enquiry →", formMsg: "Thank you — we'll be in touch within 24 hours.",
+    contactMapEyebrow: "Visit Us", contactMapTitle1: "We're based in ", contactMapTitle2: "Kathmandu", contactMapTitle3: ",serving all of Nepal",
+    contactMapDesc: "While we work with clients remotely across the country, on‑site visits can be arranged for enterprises in the valley.",
+    footerTagline: "A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.",
+    footerSolutions: "Solutions", footerCompany: "Company", footerLegal: "Legal",
+    softDev: "Software Development", cloud: "Cloud Solutions", cyber: "Cybersecurity", aiMl: "AI & ML", uiux: "UI/UX Design",
+    privacyPolicy: "Privacy Policy", terms: "Terms of Service", companiesAct: "Companies Act 2063", labourAct: "Labour Act 2074",
+    copyright: "© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.",
+    ocr: "OCR Registered", pan: "PAN Holder", ssf: "SSF Compliant",
+    cookieText: "🍪 We use cookies to improve your experience.", cookiePolicy: "Privacy Policy", cookieAccept: "Accept",
+    chatHelp: "How can we help?", chatWhatsApp: "💬 WhatsApp Chat", chatEmail: "✉️ Email Us", chatCall: "📞 Call Now",
+    mobCall: "📞 Tap to call — +977-9768969780"
+  },
+  ne: {
+    home: "गृहपृष्ठ", about: "हाम्रो बारेमा", services: "सेवाहरू", solutions: "समाधानहरू", whyUs: "किन हामी", contact: "सम्पर्क",
+    contactHeroEyebrow: "जडान गरौं", contactHeroLine1: "तपाईंको", contactHeroLine2: "डिजिटल यात्रा", contactHeroLine3: "आजै सुरु गर्नुहोस्",
+    contactHeroDesc: "हामीलाई तपाईंको परियोजना, चुनौती, वा विचार बताउनुहोस्। हामी एक व्यापार दिन भित्र फिर्ता सम्पर्क गर्नेछौं।",
+    contactLeftTitle1: "हामीसम्म", contactLeftTitle2: "कुनै पनि समयमा", contactLeftTitle3: "पुग्नुहोस्",
+    contactLeftDesc: "हाम्रो टोली काठमाडौंभरि वितरित छ र तपाईंको आवश्यकताहरूको बारेमा कुरा गर्न उपलब्ध छ — अंग्रेजी वा नेपालीमा।",
+    contactEmailLabel: "इमेल", contactPhoneLabel: "फोन / व्हाट्सएप", contactOfficeLabel: "कार्यालय", contactHoursLabel: "काम गर्ने घण्टा",
+    contactHours: "आइतबार – शुक्रबार, बिहान ९:०० – साँझ ६:०० (नेपाली समय)",
+    formName: "पूरा नाम", formNamePlaceholder: "तपाईंको नाम",
+    formEmail: "इमेल ठेगाना", formEmailPlaceholder: "तपाईं@कम्पनी.कम",
+    formPhone: "फोन नम्बर", formPhonePlaceholder: "+९७७-___________",
+    formCompany: "कम्पनीको नाम", formCompanyPlaceholder: "कम्पनीको नाम",
+    formService: "आवश्यक सेवा", formServicePlaceholder: "एउटा सेवा चयन गर्नुहोस्…",
+    serviceOpt1: "सफ्टवेयर विकास", serviceOpt2: "वेब / पोर्टल विकास", serviceOpt3: "मोबाइल एप विकास",
+    serviceOpt4: "क्लाउड र पूर्वाधार", serviceOpt5: "एआई / मेसिन लर्निङ", serviceOpt6: "साइबर सुरक्षा",
+    serviceOpt7: "UI/UX र डिजाइन", serviceOpt8: "डिजिटल मार्केटिङ", serviceOpt9: "आईटी परामर्श",
+    serviceOpt10: "आईटी हार्डवेयर", serviceOpt11: "व्यवस्थित आईटी सेवाहरू", serviceOpt12: "अन्य",
+    formMessage: "हामीलाई तपाईंको परियोजनाको बारेमा बताउनुहोस्", formMessagePlaceholder: "तपाईंको परियोजना, समयरेखा र बजेट वर्णन गर्नुहोस्…",
+    formSubmit: "पठाउनुहोस् →", formMsg: "धन्यवाद — हामी २४ घण्टा भित्र सम्पर्क गर्नेछौं।",
+    contactMapEyebrow: "भ्रमण गर्नुहोस्", contactMapTitle1: "हामी ", contactMapTitle2: "काठमाडौं", contactMapTitle3: "मा आधारित छौं, सम्पूर्ण नेपालको सेवा गर्दै",
+    contactMapDesc: "हामी देशभरि ग्राहकहरूसँग टाढाबाट काम गर्छौं, तथापि उपत्यकाका उद्यमहरूको लागि अन-साइट भ्रमणहरू व्यवस्था गर्न सकिन्छ।",
+    footerTagline: "नेपाल दर्ता गरिएको प्राइभेट लिमिटेड कम्पनीले काठमाडौंबाट सफ्टवेयर, क्लाउड, साइबर सुरक्षा र डिजिटल रूपान्तरण प्रदान गर्दै।",
+    footerSolutions: "समाधानहरू", footerCompany: "कम्पनी", footerLegal: "कानूनी",
+    softDev: "सफ्टवेयर विकास", cloud: "क्लाउड समाधानहरू", cyber: "साइबर सुरक्षा", aiMl: "एआई र एमएल", uiux: "UI/UX डिजाइन",
+    privacyPolicy: "गोपनीयता नीति", terms: "सेवा सर्तहरू", companiesAct: "कम्पनी ऐन २०६३", labourAct: "श्रम ऐन २०७४",
+    copyright: "© २०८१ इभलिन्क्स समाधानहरू प्राइभेट लिमिटेड · काठमाडौं, नेपाल · सबै अधिकार सुरक्षित।",
+    ocr: "OCR दर्ता", pan: "PAN धारक", ssf: "SSF अनुपालित",
+    cookieText: "🍪 हामी तपाईंको अनुभव सुधार गर्न कुकीहरू प्रयोग गर्छौं।", cookiePolicy: "गोपनीयता नीति", cookieAccept: "स्वीकार गर्नुहोस्",
+    chatHelp: "हामी कसरी मद्दत गर्न सक्छौं?", chatWhatsApp: "💬 व्हाट्सएप च्याट", chatEmail: "✉️ इमेल गर्नुहोस्", chatCall: "📞 अहिले कल गर्नुहोस्",
+    mobCall: "📞 कल गर्न ट्याप गर्नुहोस् — +९७७-९७६८९६९७८०"
+  }
+};
+function translatePage(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      if (el.placeholder !== undefined) el.placeholder = translations[lang][key];
+      else {
+        const children = el.children;
+        if (children.length === 0) el.innerText = translations[lang][key];
+        else {
+          const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+          let textNode;
+          while (textNode = walker.nextNode()) {
+            if (textNode.parentNode === el && textNode.textContent.trim() !== "") {
+              textNode.textContent = translations[lang][key];
+              break;
+            }
+          }
+        }
+      }
+    }
+  });
+  // Translate placeholders separately
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[lang] && translations[lang][key]) el.placeholder = translations[lang][key];
+  });
+  // Translate select options
+  document.querySelectorAll('[data-i18n-select]').forEach(select => {
+    const optKeyPrefix = select.getAttribute('data-i18n-select');
+    Array.from(select.options).forEach((opt, idx) => {
+      if (idx === 0 && optKeyPrefix === 'formServiceOptions') return;
+      const key = optKeyPrefix ? `${optKeyPrefix}${idx+1}` : null;
+      if (key && translations[lang] && translations[lang][key]) opt.innerText = translations[lang][key];
+    });
+  });
+  const langBtn = document.getElementById('langBtn');
+  if (langBtn) langBtn.innerHTML = lang === 'ne' ? '🇬🇧 English' : '🇳🇵 नेपाली';
+  localStorage.setItem('preferredLanguage', lang);
+}
+function initTheme() {
+  const themeToggle = document.getElementById('themeToggle');
+  if (!themeToggle) return;
+  const storedTheme = localStorage.getItem('theme') || 'dark';
+  if (storedTheme === 'light') { document.body.classList.add('light-mode'); themeToggle.innerHTML = '☀️'; }
+  else themeToggle.innerHTML = '🌙';
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    const isLight = document.body.classList.contains('light-mode');
+    themeToggle.innerHTML = isLight ? '☀️' : '🌙';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+  translatePage(savedLang);
+  const langBtn = document.getElementById('langBtn');
+  if (langBtn) langBtn.addEventListener('click', () => {
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const newLang = currentLang === 'en' ? 'ne' : 'en';
+    translatePage(newLang);
+  });
+  initTheme();
+});
+</script>
 </body>
 </html>

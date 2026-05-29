@@ -23,258 +23,286 @@
     Evelynx
   </a>
   <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="services.html">Services</a>
-    <a href="solutions.html">Solutions</a>
-    <a href="why-us.html">Why Us</a>
+    <a href="index.html" data-i18n="home">Home</a>
+    <a href="about.html" data-i18n="about">About</a>
+    <a href="services.html" data-i18n="services">Services</a>
+    <a href="solutions.html" data-i18n="solutions">Solutions</a>
+    <a href="why-us.html" data-i18n="whyUs">Why Us</a>
   </nav>
   <div class="nav-right">
     <button class="nav-lang" id="langBtn">🇳🇵 नेपाली</button>
-    <a href="contact.html" class="nav-cta">Contact us</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Light/Dark mode">🌙</button>
+    <a href="contact.html" class="nav-cta" data-i18n="contact">Contact us</a>
   </div>
   <button class="nav-ham" id="hamBtn"><span></span><span></span><span></span></button>
 </header>
 <div class="mob-menu" id="mobMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="solutions.html">Solutions</a>
-  <a href="why-us.html">Why Us</a>
-  <a href="contact.html">Contact</a>
+  <a href="index.html" data-i18n="home">Home</a>
+  <a href="about.html" data-i18n="about">About</a>
+  <a href="services.html" data-i18n="services">Services</a>
+  <a href="solutions.html" data-i18n="solutions">Solutions</a>
+  <a href="why-us.html" data-i18n="whyUs">Why Us</a>
+  <a href="contact.html" data-i18n="contact">Contact</a>
 </div>
 
-<!-- ═══ HERO (standard, replaces page-hero) ═══ -->
+<!-- ═══ HERO ═══ -->
 <section class="hero" style="min-height: 70vh;">
   <div class="hero-left">
-    <div class="hero-eyebrow">Our Story</div>
+    <div class="hero-eyebrow" data-i18n="aboutHeroEyebrow">Our Story</div>
     <h1 class="hero-h1">
-      Built in Nepal,<br/>
-      Built for <em>Nepal</em>
+      <span data-i18n="aboutHeroLine1">Built in Nepal,</span><br/>
+      <span data-i18n="aboutHeroLine2">Built for </span><em><span data-i18n="aboutHeroLine3">Nepal</span></em>
     </h1>
-    <p class="hero-p">A team of engineers, designers, and strategists on a mission to bring enterprise-grade technology to every Nepali business — without compromise.</p>
+    <p class="hero-p" data-i18n="aboutHeroDesc">A team of engineers, designers, and strategists on a mission to bring enterprise-grade technology to every Nepali business — without compromise.</p>
     <div class="hero-stats">
-      <div><div class="stat-n"><span class="count" data-t="50">0</span><sup>+</sup></div><div class="stat-l">Projects Delivered</div></div>
-      <div><div class="stat-n"><span class="count" data-t="30">0</span><sup>+</sup></div><div class="stat-l">Clients Served</div></div>
-      <div><div class="stat-n"><span class="count" data-t="5">0</span><sup>+</sup></div><div class="stat-l">Years of Excellence</div></div>
+      <div><div class="stat-n"><span class="count" data-t="50">0</span><sup>+</sup></div><div class="stat-l" data-i18n="statProjects">Projects Delivered</div></div>
+      <div><div class="stat-n"><span class="count" data-t="30">0</span><sup>+</sup></div><div class="stat-l" data-i18n="statClients">Clients Served</div></div>
+      <div><div class="stat-n"><span class="count" data-t="5">0</span><sup>+</sup></div><div class="stat-l" data-i18n="statExperience">Years of Excellence</div></div>
     </div>
   </div>
   <div class="hero-right">
-    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80&auto=format&fit=crop" alt="Technology"/>
+    <img src="https://picsum.photos/id/26/1200/800" alt="Technology" style="object-fit:cover;width:100%;height:auto;border-radius:32px;"/>
     <div class="hero-overlay"></div>
   </div>
 </section>
 
-<!-- ═══ FOUNDER / ABOUT GRID (matches index) ═══ -->
+<!-- ═══ FOUNDER / ABOUT GRID ═══ -->
 <section class="sec">
   <div class="about-grid reveal">
     <div class="about-img">
       <img src="https://images.unsplash.com/photo-1682163339125-321e5a7eac1e?w=800&q=80&auto=format&fit=crop" alt="Pusparaj Khadka — Founder & CEO"/>
       <div class="about-img-overlay"></div>
       <div class="about-img-badge">
-        <p>Founder & Chief Executive Officer</p>
+        <p data-i18n="founderTitle">Founder & Chief Executive Officer</p>
         <strong>Pusparaj Khadka · BIT</strong>
       </div>
     </div>
     <div class="about-content">
-      <div class="eyebrow">About Evelynx</div>
-      <h2 class="sec-h">Engineered with purpose,<br/>delivered with <em>precision</em></h2>
-      <p class="sec-sub">Evelynx Solutions was founded with a single mission: deliver world-class IT to Nepal's businesses — at every scale, in every sector, without compromise.</p>
+      <div class="eyebrow" data-i18n="aboutEyebrow">About Evelynx</div>
+      <h2 class="sec-h">
+        <span data-i18n="aboutTitlePart1">Engineered with purpose,</span><br/>
+        <span data-i18n="aboutTitlePart2">delivered with </span><em><span data-i18n="aboutTitlePart3">precision</span></em>
+      </h2>
+      <p class="sec-sub" data-i18n="aboutSub">Evelynx Solutions was founded with a single mission: deliver world-class IT to Nepal's businesses — at every scale, in every sector, without compromise.</p>
       <div class="about-list">
-        <div class="about-item">
-          <div class="about-item-n">01</div>
-          <div class="about-item-text">
-            <h4>Nepal-first mindset</h4>
-            <p>Deep understanding of the local market, regulatory landscape, and business environment — solutions that work <em>here</em>.</p>
-          </div>
-        </div>
-        <div class="about-item">
-          <div class="about-item-n">02</div>
-          <div class="about-item-text">
-            <h4>Legally compliant & transparent</h4>
-            <p>OCR registered, PAN holder, SSF-compliant employer under Labour Act 2074, Companies Act 2063 and Privacy Act 2075.</p>
-          </div>
-        </div>
-        <div class="about-item">
-          <div class="about-item-n">03</div>
-          <div class="about-item-text">
-            <h4>Security-first in every engagement</h4>
-            <p>Data privacy, secure coding, and cybersecurity built into every solution from day one — not bolted on after.</p>
-          </div>
-        </div>
-        <div class="about-item">
-          <div class="about-item-n">04</div>
-          <div class="about-item-text">
-            <h4>Intellectual property belongs to you</h4>
-            <p>All work product created for your project is assigned to you on completion. No lock-in, no ambiguity.</p>
-          </div>
-        </div>
+        <div class="about-item"><div class="about-item-n">01</div><div class="about-item-text"><h4 data-i18n="aboutItem1Title">Nepal-first mindset</h4><p data-i18n="aboutItem1Desc">Deep understanding of the local market, regulatory landscape, and business environment — solutions that work <em>here</em>.</p></div></div>
+        <div class="about-item"><div class="about-item-n">02</div><div class="about-item-text"><h4 data-i18n="aboutItem2Title">Legally compliant & transparent</h4><p data-i18n="aboutItem2Desc">OCR registered, PAN holder, SSF-compliant employer under Labour Act 2074, Companies Act 2063 and Privacy Act 2075.</p></div></div>
+        <div class="about-item"><div class="about-item-n">03</div><div class="about-item-text"><h4 data-i18n="aboutItem3Title">Security-first in every engagement</h4><p data-i18n="aboutItem3Desc">Data privacy, secure coding, and cybersecurity built into every solution from day one — not bolted on after.</p></div></div>
+        <div class="about-item"><div class="about-item-n">04</div><div class="about-item-text"><h4 data-i18n="aboutItem4Title">Intellectual property belongs to you</h4><p data-i18n="aboutItem4Desc">All work product created for your project is assigned to you on completion. No lock-in, no ambiguity.</p></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ VALUES (using existing process-steps) ═══ -->
+<!-- ═══ VALUES (process-steps) ═══ -->
 <section class="sec sec-alt">
   <div class="reveal" style="text-align:center;max-width:580px;margin:0 auto 4rem;">
-    <div class="eyebrow eyebrow-center">Our Values</div>
-    <h2 class="sec-h" style="text-align:center;">The principles we<br/><em>work by</em></h2>
+    <div class="eyebrow eyebrow-center" data-i18n="valuesEyebrow">Our Values</div>
+    <h2 class="sec-h" style="text-align:center;"><span data-i18n="valuesTitlePart1">The principles we</span><br/><em><span data-i18n="valuesTitlePart2">work by</span></em></h2>
   </div>
   <div class="process-steps reveal">
-    <div class="step">
-      <div class="step-n">01</div>
-      <div class="step-ico">🎯</div>
-      <h4>Precision</h4>
-      <p>We obsess over the details that most skip. Quality isn't a checkbox — it's our operating principle, from first commit to final deployment.</p>
-    </div>
-    <div class="step">
-      <div class="step-n">02</div>
-      <div class="step-ico">🤝</div>
-      <h4>Transparency</h4>
-      <p>No hidden fees, no surprise scope changes. You always know exactly where your project stands and what we're working on.</p>
-    </div>
-    <div class="step">
-      <div class="step-n">03</div>
-      <div class="step-ico">🌱</div>
-      <h4>Partnership</h4>
-      <p>We succeed when you succeed. We invest in understanding your business so we can proactively recommend improvements.</p>
-    </div>
-    <div class="step">
-      <div class="step-n">04</div>
-      <div class="step-ico">🔒</div>
-      <h4>Security</h4>
-      <p>Every solution is designed with a security-first mindset, aligned with ISO-27001 and Nepal's Privacy Act 2075.</p>
-    </div>
-    <div class="step">
-      <div class="step-n">05</div>
-      <div class="step-ico">⚡</div>
-      <h4>Agility</h4>
-      <p>Technology moves fast. Our agile delivery model gives you working software in weeks, not months.</p>
-    </div>
-    <div class="step">
-      <div class="step-n">06</div>
-      <div class="step-ico">🏆</div>
-      <h4>Excellence</h4>
-      <p>We hold ourselves to a standard that competes globally — world-class, not just "good enough for Nepal".</p>
-    </div>
+    <div class="step"><div class="step-n">01</div><div class="step-ico">🎯</div><h4 data-i18n="value1Title">Precision</h4><p data-i18n="value1Desc">We obsess over the details that most skip. Quality isn't a checkbox — it's our operating principle, from first commit to final deployment.</p></div>
+    <div class="step"><div class="step-n">02</div><div class="step-ico">🤝</div><h4 data-i18n="value2Title">Transparency</h4><p data-i18n="value2Desc">No hidden fees, no surprise scope changes. You always know exactly where your project stands and what we're working on.</p></div>
+    <div class="step"><div class="step-n">03</div><div class="step-ico">🌱</div><h4 data-i18n="value3Title">Partnership</h4><p data-i18n="value3Desc">We succeed when you succeed. We invest in understanding your business so we can proactively recommend improvements.</p></div>
+    <div class="step"><div class="step-n">04</div><div class="step-ico">🔒</div><h4 data-i18n="value4Title">Security</h4><p data-i18n="value4Desc">Every solution is designed with a security-first mindset, aligned with ISO-27001 and Nepal's Privacy Act 2075.</p></div>
+    <div class="step"><div class="step-n">05</div><div class="step-ico">⚡</div><h4 data-i18n="value5Title">Agility</h4><p data-i18n="value5Desc">Technology moves fast. Our agile delivery model gives you working software in weeks, not months.</p></div>
+    <div class="step"><div class="step-n">06</div><div class="step-ico">🏆</div><h4 data-i18n="value6Title">Excellence</h4><p data-i18n="value6Desc">We hold ourselves to a standard that competes globally — world-class, not just "good enough for Nepal".</p></div>
   </div>
 </section>
 
-<!-- ═══ STATS STRIP (matches index) ═══ -->
+<!-- ═══ STATS STRIP ═══ -->
 <section class="sec-dark" style="padding:0;">
   <div class="stats-row">
-    <div class="stat-cell reveal"><div class="stat-big"><span class="count" data-t="50">0</span><em>+</em></div><div class="stat-desc">Projects Delivered</div></div>
-    <div class="stat-cell reveal"><div class="stat-big"><span class="count" data-t="30">0</span><em>+</em></div><div class="stat-desc">Satisfied Clients</div></div>
-    <div class="stat-cell reveal"><div class="stat-big"><span class="count" data-t="12">0</span><em>+</em></div><div class="stat-desc">Industries Served</div></div>
-    <div class="stat-cell reveal"><div class="stat-big">24<em>/7</em></div><div class="stat-desc">Support Availability</div></div>
+    <div class="stat-cell reveal"><div class="stat-big"><span class="count" data-t="50">0</span><em>+</em></div><div class="stat-desc" data-i18n="statProjects">Projects Delivered</div></div>
+    <div class="stat-cell reveal"><div class="stat-big"><span class="count" data-t="30">0</span><em>+</em></div><div class="stat-desc" data-i18n="statClients">Satisfied Clients</div></div>
+    <div class="stat-cell reveal"><div class="stat-big"><span class="count" data-t="12">0</span><em>+</em></div><div class="stat-desc" data-i18n="statsTech">Technologies Mastered</div></div>
+    <div class="stat-cell reveal"><div class="stat-big">24<em>/7</em></div><div class="stat-desc" data-i18n="statsSupport">Support Coverage</div></div>
   </div>
 </section>
 
-<!-- ═══ TEAM (using testi-grid) ═══ -->
+<!-- ═══ TEAM (testi-grid) ═══ -->
 <section class="sec">
   <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto 4rem;">
-    <div class="eyebrow eyebrow-center">Leadership</div>
-    <h2 class="sec-h" style="text-align:center;">The people behind<br/><em>every solution</em></h2>
+    <div class="eyebrow eyebrow-center" data-i18n="teamEyebrow">Leadership</div>
+    <h2 class="sec-h" style="text-align:center;"><span data-i18n="teamTitlePart1">The people behind</span><br/><em><span data-i18n="teamTitlePart2">every solution</span></em></h2>
   </div>
   <div class="testi-grid">
     <div class="testi-card reveal" style="align-items:flex-start;">
       <div style="font-size:3.5rem;">👤</div>
-      <div>
-        <div class="testi-author">Pusparaj Khadka</div>
-        <div class="testi-role" style="font-size:.82rem;color:var(--blue);font-weight:600;">Founder & CEO · BIT</div>
-        <p class="testi-text" style="margin-top:.75rem;">Architect of the company's technical vision, with deep expertise in enterprise software and cloud infrastructure.</p>
-      </div>
+      <div><div class="testi-author">Pusparaj Khadka</div><div class="testi-role" style="font-size:.82rem;color:var(--blue);font-weight:600;" data-i18n="teamRole1">Founder & CEO · BIT</div><p class="testi-text" style="margin-top:.75rem;" data-i18n="teamDesc1">Architect of the company's technical vision, with deep expertise in enterprise software and cloud infrastructure.</p></div>
     </div>
     <div class="testi-card reveal" data-delay="100" style="align-items:flex-start;">
       <div style="font-size:3.5rem;">👤</div>
-      <div>
-        <div class="testi-author">Engineering Team</div>
-        <div class="testi-role" style="font-size:.82rem;color:var(--blue);font-weight:600;">Full-Stack · Cloud · Security</div>
-        <p class="testi-text" style="margin-top:.75rem;">A multidisciplinary team of certified engineers covering every layer of the modern technology stack.</p>
-      </div>
+      <div><div class="testi-author" data-i18n="teamName2">Engineering Team</div><div class="testi-role" style="font-size:.82rem;color:var(--blue);font-weight:600;" data-i18n="teamRole2">Full-Stack · Cloud · Security</div><p class="testi-text" style="margin-top:.75rem;" data-i18n="teamDesc2">A multidisciplinary team of certified engineers covering every layer of the modern technology stack.</p></div>
     </div>
     <div class="testi-card reveal" data-delay="200" style="align-items:flex-start;">
       <div style="font-size:3.5rem;">👤</div>
-      <div>
-        <div class="testi-author">Design & Strategy</div>
-        <div class="testi-role" style="font-size:.82rem;color:var(--blue);font-weight:600;">UI/UX · Brand · Growth</div>
-        <p class="testi-text" style="margin-top:.75rem;">Creative professionals who blend aesthetic excellence with data-driven thinking to build brands that stand out.</p>
-      </div>
+      <div><div class="testi-author" data-i18n="teamName3">Design & Strategy</div><div class="testi-role" style="font-size:.82rem;color:var(--blue);font-weight:600;" data-i18n="teamRole3">UI/UX · Brand · Growth</div><p class="testi-text" style="margin-top:.75rem;" data-i18n="teamDesc3">Creative professionals who blend aesthetic excellence with data-driven thinking to build brands that stand out.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ═══ CTA BAND (using existing buttons) ═══ -->
+<!-- ═══ CTA BAND ═══ -->
 <section class="sec sec-alt" style="text-align:center;">
   <div class="reveal">
-    <div class="eyebrow eyebrow-center">Join Us</div>
-    <h2 class="sec-h" style="margin-bottom: 1rem;">Ready to build your<br/>next <em>great thing</em>?</h2>
-    <p class="sec-sub" style="margin-bottom: 2rem;">Let's have a conversation about your project — no commitment required.</p>
+    <div class="eyebrow eyebrow-center" data-i18n="ctaEyebrow">Join Us</div>
+    <h2 class="sec-h" style="margin-bottom: 1rem;"><span data-i18n="ctaTitlePart1">Ready to build your</span><br/><span data-i18n="ctaTitlePart2">next </span><em><span data-i18n="ctaTitlePart3">great thing</span></em><span data-i18n="ctaTitlePart4">?</span></h2>
+    <p class="sec-sub" style="margin-bottom: 2rem;" data-i18n="ctaDesc">Let's have a conversation about your project — no commitment required.</p>
     <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
-      <a href="contact.html" class="btn-dark" style="background: var(--blue); color: white;">Start a project →</a>
-      <a href="why-us.html" class="btn-text">Why Evelynx? <span class="arr">→</span></a>
+      <a href="contact.html" class="btn-dark" style="background: var(--blue); color: white;" data-i18n="ctaButton1">Start a project →</a>
+      <a href="why-us.html" class="btn-text" data-i18n="ctaButton2">Why Evelynx? <span class="arr">→</span></a>
     </div>
   </div>
 </section>
 
-<!-- ═══ FOOTER (exactly as index) ═══ -->
+<!-- ═══ FOOTER ═══ -->
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-brand">
-      <div class="f-logo">
-        <div class="nav-logo-mark" style="width:34px;height:34px;border-radius:7px;">
-          <svg viewBox="0 0 56 56" fill="none" style="width:19px;height:19px;"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="3" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="1.5" fill="#fff"/></svg>
-        </div>
-        Evelynx Solutions
-      </div>
-      <p>A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.</p>
-      <div class="footer-social">
-        <a href="#" class="footer-social-link" aria-label="LinkedIn">in</a>
-        <a href="#" class="footer-social-link" aria-label="Facebook">f</a>
-        <a href="https://wa.me/9779768969780" class="footer-social-link" aria-label="WhatsApp">💬</a>
-      </div>
+      <div class="f-logo"><div class="nav-logo-mark" style="width:34px;height:34px;border-radius:7px;"><svg viewBox="0 0 56 56" fill="none" style="width:19px;height:19px;"><polyline points="10,34 22,18 30,26 38,14 46,28" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><line x1="30" y1="26" x2="30" y2="40" stroke="rgba(255,255,255,.6)" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="46" r="3" fill="rgba(255,255,255,.4)"/><circle cx="30" cy="46" r="1.5" fill="#fff"/></svg></div>Evelynx Solutions</div>
+      <p data-i18n="footerTagline">A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.</p>
+      <div class="footer-social"><a href="#" class="footer-social-link">in</a><a href="#" class="footer-social-link">f</a><a href="https://wa.me/9779768969780" class="footer-social-link">💬</a></div>
     </div>
-    <div class="footer-col">
-      <h5>Solutions</h5>
-      <a href="solutions.html">Software Development</a>
-      <a href="solutions.html">Cloud Solutions</a>
-      <a href="solutions.html">Cybersecurity</a>
-      <a href="solutions.html">AI & ML</a>
-      <a href="solutions.html">UI/UX Design</a>
-    </div>
-    <div class="footer-col">
-      <h5>Company</h5>
-      <a href="about.html">About us</a>
-      <a href="services.html">Services</a>
-      <a href="why-us.html">Why Us</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="footer-col">
-      <h5>Legal</h5>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">Companies Act 2063</a>
-      <a href="#">Labour Act 2074</a>
-    </div>
+    <div class="footer-col"><h5 data-i18n="footerSolutions">Solutions</h5><a href="solutions.html" data-i18n="softDev">Software Development</a><a href="solutions.html" data-i18n="cloud">Cloud Solutions</a><a href="solutions.html" data-i18n="cyber">Cybersecurity</a><a href="solutions.html" data-i18n="aiMl">AI & ML</a><a href="solutions.html" data-i18n="uiux">UI/UX Design</a></div>
+    <div class="footer-col"><h5 data-i18n="footerCompany">Company</h5><a href="about.html" data-i18n="about">About us</a><a href="services.html" data-i18n="services">Services</a><a href="why-us.html" data-i18n="whyUs">Why Us</a><a href="contact.html" data-i18n="contact">Contact</a></div>
+    <div class="footer-col"><h5 data-i18n="footerLegal">Legal</h5><a href="#" data-i18n="privacyPolicy">Privacy Policy</a><a href="#" data-i18n="terms">Terms of Service</a><a href="#" data-i18n="companiesAct">Companies Act 2063</a><a href="#" data-i18n="labourAct">Labour Act 2074</a></div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.</p>
-    <div class="footer-tags">
-      <span class="f-tag">OCR Registered</span>
-      <span class="f-tag">PAN Holder</span>
-      <span class="f-tag">SSF Compliant</span>
-    </div>
-  </div>
+  <div class="footer-bottom"><p data-i18n="copyright">© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.</p><div class="footer-tags"><span class="f-tag" data-i18n="ocr">OCR Registered</span><span class="f-tag" data-i18n="pan">PAN Holder</span><span class="f-tag" data-i18n="ssf">SSF Compliant</span></div></div>
 </footer>
 
-<a href="tel:+9779768969780" class="mob-call">📞 +977-9768969780</a>
+<a href="tel:+9779768969780" class="mob-call" data-i18n="mobCall">📞 +977-9768969780</a>
 <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-<div class="chat-float" id="chatFloat">
-  <div class="chat-pop" id="chatPop"><button class="chat-pop-close" id="chatClose">✕</button><h5>How can we help?</h5><a href="https://wa.me/9779768969780" target="_blank">💬 WhatsApp Chat</a><a href="mailto:info@evelynxsolutions.com.np">✉️ Email Us</a><a href="tel:+9779768969780">📞 Call Now</a></div>
-  <button class="chat-float-btn" id="chatBtn">💬</button>
-</div>
-<div class="cookie-bar" id="cookieBar"><span>🍪 We use cookies to improve your experience. <a href="#">Privacy Policy</a>.</span><button class="cookie-accept" id="cookieAccept">Accept</button></div>
+<div class="chat-float" id="chatFloat"><div class="chat-pop" id="chatPop"><button class="chat-pop-close" id="chatClose">✕</button><h5 data-i18n="chatHelp">How can we help?</h5><a href="https://wa.me/9779768969780" target="_blank" data-i18n="chatWhatsApp">💬 WhatsApp Chat</a><a href="mailto:info@evelynxsolutions.com.np" data-i18n="chatEmail">✉️ Email Us</a><a href="tel:+9779768969780" data-i18n="chatCall">📞 Call Now</a></div><button class="chat-float-btn" id="chatBtn">💬</button></div>
+<div class="cookie-bar" id="cookieBar"><span><span data-i18n="cookieText">🍪 We use cookies to improve your experience.</span> <a href="#" data-i18n="cookiePolicy">Privacy Policy</a>.</span><button class="cookie-accept" id="cookieAccept" data-i18n="cookieAccept">Accept</button></div>
 
 <script src="main.js"></script>
+<script>
+// ==================== TRANSLATIONS ====================
+const translations = {
+  en: {
+    home: "Home", about: "About", services: "Services", solutions: "Solutions", whyUs: "Why Us", contact: "Contact",
+    aboutHeroEyebrow: "Our Story", aboutHeroLine1: "Built in Nepal,", aboutHeroLine2: "Built for ", aboutHeroLine3: "Nepal",
+    aboutHeroDesc: "A team of engineers, designers, and strategists on a mission to bring enterprise-grade technology to every Nepali business — without compromise.",
+    statProjects: "Projects Delivered", statClients: "Clients Served", statExperience: "Years of Excellence",
+    founderTitle: "Founder & Chief Executive Officer",
+    aboutEyebrow: "About Evelynx", aboutTitlePart1: "Engineered with purpose,", aboutTitlePart2: "delivered with ", aboutTitlePart3: "precision",
+    aboutSub: "Evelynx Solutions was founded with a single mission: deliver world-class IT to Nepal's businesses — at every scale, in every sector, without compromise.",
+    aboutItem1Title: "Nepal-first mindset", aboutItem1Desc: "Deep understanding of the local market, regulatory landscape, and business environment — solutions that work here.",
+    aboutItem2Title: "Legally compliant & transparent", aboutItem2Desc: "OCR registered, PAN holder, SSF-compliant employer under Labour Act 2074, Companies Act 2063 and Privacy Act 2075.",
+    aboutItem3Title: "Security-first in every engagement", aboutItem3Desc: "Data privacy, secure coding, and cybersecurity built into every solution from day one — not bolted on after.",
+    aboutItem4Title: "Intellectual property belongs to you", aboutItem4Desc: "All work product created for your project is assigned to you on completion. No lock-in, no ambiguity.",
+    statsTech: "Technologies Mastered", statsSupport: "Support Coverage",
+    valuesEyebrow: "Our Values", valuesTitlePart1: "The principles we", valuesTitlePart2: "work by",
+    value1Title: "Precision", value1Desc: "We obsess over the details that most skip. Quality isn't a checkbox — it's our operating principle, from first commit to final deployment.",
+    value2Title: "Transparency", value2Desc: "No hidden fees, no surprise scope changes. You always know exactly where your project stands and what we're working on.",
+    value3Title: "Partnership", value3Desc: "We succeed when you succeed. We invest in understanding your business so we can proactively recommend improvements.",
+    value4Title: "Security", value4Desc: "Every solution is designed with a security-first mindset, aligned with ISO-27001 and Nepal's Privacy Act 2075.",
+    value5Title: "Agility", value5Desc: "Technology moves fast. Our agile delivery model gives you working software in weeks, not months.",
+    value6Title: "Excellence", value6Desc: "We hold ourselves to a standard that competes globally — world-class, not just 'good enough for Nepal'.",
+    teamEyebrow: "Leadership", teamTitlePart1: "The people behind", teamTitlePart2: "every solution",
+    teamRole1: "Founder & CEO · BIT", teamDesc1: "Architect of the company's technical vision, with deep expertise in enterprise software and cloud infrastructure.",
+    teamName2: "Engineering Team", teamRole2: "Full-Stack · Cloud · Security", teamDesc2: "A multidisciplinary team of certified engineers covering every layer of the modern technology stack.",
+    teamName3: "Design & Strategy", teamRole3: "UI/UX · Brand · Growth", teamDesc3: "Creative professionals who blend aesthetic excellence with data-driven thinking to build brands that stand out.",
+    ctaEyebrow: "Join Us", ctaTitlePart1: "Ready to build your", ctaTitlePart2: "next ", ctaTitlePart3: "great thing", ctaTitlePart4: "?",
+    ctaDesc: "Let's have a conversation about your project — no commitment required.",
+    ctaButton1: "Start a project →", ctaButton2: "Why Evelynx? →",
+    footerTagline: "A Nepal-registered Private Limited company delivering software, cloud, cybersecurity and digital transformation from Kathmandu.",
+    footerSolutions: "Solutions", footerCompany: "Company", footerLegal: "Legal",
+    softDev: "Software Development", cloud: "Cloud Solutions", cyber: "Cybersecurity", aiMl: "AI & ML", uiux: "UI/UX Design",
+    privacyPolicy: "Privacy Policy", terms: "Terms of Service", companiesAct: "Companies Act 2063", labourAct: "Labour Act 2074",
+    copyright: "© 2081 B.S. Evelynx Solutions Private Limited · Kathmandu, Nepal · All rights reserved.",
+    ocr: "OCR Registered", pan: "PAN Holder", ssf: "SSF Compliant",
+    cookieText: "🍪 We use cookies to improve your experience.", cookiePolicy: "Privacy Policy", cookieAccept: "Accept",
+    chatHelp: "How can we help?", chatWhatsApp: "💬 WhatsApp Chat", chatEmail: "✉️ Email Us", chatCall: "📞 Call Now",
+    mobCall: "📞 +977-9768969780"
+  },
+  ne: {
+    home: "गृहपृष्ठ", about: "हाम्रो बारेमा", services: "सेवाहरू", solutions: "समाधानहरू", whyUs: "किन हामी", contact: "सम्पर्क",
+    aboutHeroEyebrow: "हाम्रो कथा", aboutHeroLine1: "नेपालमा निर्मित,", aboutHeroLine2: "नेपालको लागि ", aboutHeroLine3: "निर्मित",
+    aboutHeroDesc: "इन्जिनियर, डिजाइनर, र रणनीतिकारहरूको टोली हरेक नेपाली व्यवसायमा उद्यम-स्तरीय प्रविधि ल्याउने मिशनमा — सम्झौता बिना।",
+    statProjects: "आयोजनाहरू सकियो", statClients: "सेवा गरिएका ग्राहकहरू", statExperience: "उत्कृष्टताका वर्षहरू",
+    founderTitle: "संस्थापक तथा प्रमुख कार्यकारी अधिकृत",
+    aboutEyebrow: "इभलिन्क्सको बारेमा", aboutTitlePart1: "उद्देश्यले निर्मित,", aboutTitlePart2: "शुद्धताका साथ ", aboutTitlePart3: "प्रदान गरिएको",
+    aboutSub: "इभलिन्क्स समाधानहरू एकल मिसनको साथ स्थापित भएको थियो: नेपाली व्यवसायहरूलाई विश्वस्तरीय आईटी प्रदान गर्नुहोस् — हरेक स्तरमा, हरेक क्षेत्रमा, सम्झौता बिना।",
+    aboutItem1Title: "नेपाल-पहिलो मानसिकता", aboutItem1Desc: "स्थानीय बजार, नियामक परिदृश्य, र व्यवसाय वातावरणको गहिरो बुझाइ — यहाँ काम गर्ने समाधानहरू।",
+    aboutItem2Title: "कानूनी रूपमा अनुपालित र पारदर्शी", aboutItem2Desc: "OCR दर्ता, PAN धारक, श्रम ऐन २०७४, कम्पनी ऐन २०६३ र गोपनीयता ऐन २०७५ अन्तर्गत SSF-अनुपालित नियोक्ता।",
+    aboutItem3Title: "हरेक संलग्नतामा सुरक्षा-पहिलो", aboutItem3Desc: "डाटा गोपनीयता, सुरक्षित कोडिङ, र साइबर सुरक्षा पहिलो दिनबाटै हरेक समाधानमा निर्मित — पछि जडान गरिएको होइन।",
+    aboutItem4Title: "बौद्धिक सम्पत्ति तपाईंको हो", aboutItem4Desc: "तपाईंको परियोजनाको लागि सिर्जना गरिएको सबै कार्य उत्पादन पूरा भएपछि तपाईंलाई हस्तान्तरण गरिन्छ। कुनै लक-इन, कुनै अस्पष्टता छैन।",
+    statsTech: "प्रविधिहरू मास्टर गरियो", statsSupport: "समर्थन कभरेज",
+    valuesEyebrow: "हाम्रो मूल्यमान्यता", valuesTitlePart1: "हामीले अपनाउने", valuesTitlePart2: "सिद्धान्तहरू",
+    value1Title: "शुद्धता", value1Desc: "हामी अरूले छोड्ने विवरणहरूमा ध्यान दिन्छौं। गुणस्तर एउटा चेकबक्स होइन — यो हाम्रो सञ्चालन सिद्धान्त हो, पहिलो कमिटदेखि अन्तिम परिनियोजनसम्म।",
+    value2Title: "पारदर्शिता", value2Desc: "कुनै लुकेको शुल्क छैन, कुनै अचम्मको दायरा परिवर्तन छैन। तपाईं सधैं थाहा पाउनुहुन्छ कि तपाईंको परियोजना कहाँ छ र हामी के काम गरिरहेका छौं।",
+    value3Title: "साझेदारी", value3Desc: "तपाईं सफल हुँदा हामी सफल हुन्छौं। हामी तपाईंको व्यवसाय बुझ्न लगानी गर्छौं ताकि हामी सुधारका लागि सक्रिय रूपमा सिफारिस गर्न सकौं।",
+    value4Title: "सुरक्षा", value4Desc: "हरेक समाधान सुरक्षा-पहिलो मानसिकताका साथ डिजाइन गरिएको छ, ISO-27001 र नेपालको गोपनीयता ऐन २०७५ सँग मिल्दो।",
+    value5Title: "चुस्तता", value5Desc: "प्रविधि छिटो चल्छ। हाम्रो चुस्त वितरण मोडेलले तपाईंलाई हप्ताहरूमा काम गर्ने सफ्टवेयर दिन्छ, महिनाहरूमा होइन।",
+    value6Title: "उत्कृष्टता", value6Desc: "हामी विश्वव्यापी रूपमा प्रतिस्पर्धा गर्ने मापदण्ड राख्छौं — 'नेपालको लागि मात्र राम्रो' होइन, विश्व-स्तरीय।",
+    teamEyebrow: "नेतृत्व", teamTitlePart1: "हरेक समाधान पछाडिका", teamTitlePart2: "मानिसहरू",
+    teamRole1: "संस्थापक र सीईओ · BIT", teamDesc1: "कम्पनीको प्राविधिक दृष्टिकोणका वास्तुकार, उद्यम सफ्टवेयर र क्लाउड पूर्वाधारमा गहिरो विशेषज्ञता सहित।",
+    teamName2: "इन्जिनियरिङ टोली", teamRole2: "पूर्ण-स्ट्याक · क्लाउड · सुरक्षा", teamDesc2: "आधुनिक प्रविधि स्ट्याकको हरेक तह कभर गर्ने प्रमाणित इन्जिनियरहरूको बहु-अनुशासनात्मक टोली।",
+    teamName3: "डिजाइन र रणनीति", teamRole3: "UI/UX · ब्रान्ड · वृद्धि", teamDesc3: "रचनात्मक पेशेवरहरू जसले सौन्दर्य उत्कृष्टतालाई डाटा-संचालित सोचसँग मिलाएर ब्रान्डहरू निर्माण गर्छन्।",
+    ctaEyebrow: "हामीसँग जोडिनुहोस्", ctaTitlePart1: "तपाईंको ", ctaTitlePart2: "अर्को ", ctaTitlePart3: "ठूलो कुरा ", ctaTitlePart4: "निर्माण गर्न तयार हुनुहुन्छ?",
+    ctaDesc: "तपाईंको परियोजनाको बारेमा कुराकानी गरौं — कुनै प्रतिबद्धता आवश्यक छैन।",
+    ctaButton1: "परियोजना सुरु गर्नुहोस् →", ctaButton2: "किन इभलिन्क्स? →",
+    footerTagline: "नेपाल दर्ता गरिएको प्राइभेट लिमिटेड कम्पनीले काठमाडौंबाट सफ्टवेयर, क्लाउड, साइबर सुरक्षा र डिजिटल रूपान्तरण प्रदान गर्दै।",
+    footerSolutions: "समाधानहरू", footerCompany: "कम्पनी", footerLegal: "कानूनी",
+    softDev: "सफ्टवेयर विकास", cloud: "क्लाउड समाधानहरू", cyber: "साइबर सुरक्षा", aiMl: "एआई र एमएल", uiux: "UI/UX डिजाइन",
+    privacyPolicy: "गोपनीयता नीति", terms: "सेवा सर्तहरू", companiesAct: "कम्पनी ऐन २०६३", labourAct: "श्रम ऐन २०७४",
+    copyright: "© २०८१ इभलिन्क्स समाधानहरू प्राइभेट लिमिटेड · काठमाडौं, नेपाल · सबै अधिकार सुरक्षित।",
+    ocr: "OCR दर्ता", pan: "PAN धारक", ssf: "SSF अनुपालित",
+    cookieText: "🍪 हामी तपाईंको अनुभव सुधार गर्न कुकीहरू प्रयोग गर्छौं।", cookiePolicy: "गोपनीयता नीति", cookieAccept: "स्वीकार गर्नुहोस्",
+    chatHelp: "हामी कसरी मद्दत गर्न सक्छौं?", chatWhatsApp: "💬 व्हाट्सएप च्याट", chatEmail: "✉️ इमेल गर्नुहोस्", chatCall: "📞 अहिले कल गर्नुहोस्",
+    mobCall: "📞 +९७७-९७६८९६९७८०"
+  }
+};
+function translatePage(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      if (el.placeholder !== undefined) el.placeholder = translations[lang][key];
+      else {
+        const children = el.children;
+        if (children.length === 0) el.innerText = translations[lang][key];
+        else {
+          const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+          let textNode;
+          while (textNode = walker.nextNode()) {
+            if (textNode.parentNode === el && textNode.textContent.trim() !== "") {
+              textNode.textContent = translations[lang][key];
+              break;
+            }
+          }
+        }
+      }
+    }
+  });
+  const langBtn = document.getElementById('langBtn');
+  if (langBtn) langBtn.innerHTML = lang === 'ne' ? '🇬🇧 English' : '🇳🇵 नेपाली';
+  localStorage.setItem('preferredLanguage', lang);
+}
+function initTheme() {
+  const themeToggle = document.getElementById('themeToggle');
+  if (!themeToggle) return;
+  const storedTheme = localStorage.getItem('theme') || 'dark';
+  if (storedTheme === 'light') { document.body.classList.add('light-mode'); themeToggle.innerHTML = '☀️'; }
+  else themeToggle.innerHTML = '🌙';
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    const isLight = document.body.classList.contains('light-mode');
+    themeToggle.innerHTML = isLight ? '☀️' : '🌙';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+  translatePage(savedLang);
+  const langBtn = document.getElementById('langBtn');
+  if (langBtn) langBtn.addEventListener('click', () => {
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const newLang = currentLang === 'en' ? 'ne' : 'en';
+    translatePage(newLang);
+  });
+  initTheme();
+});
+</script>
 </body>
 </html>
