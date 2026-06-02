@@ -131,6 +131,113 @@
 <div class="cookie-bar" id="cookieBar"><span><span data-i18n="cookieText">🍪 We use cookies to improve your experience.</span> <a href="#" data-i18n="cookiePolicy">Privacy Policy</a>.</span><button class="cookie-accept" id="cookieAccept" data-i18n="cookieAccept">Accept</button></div>
 
 <script src="main.js"></script>
+
+<script>
+(function() {
+  let currentCaptchaAnswer = 0;
+
+  function updateCaptchaLabels() {
+    const lang = localStorage.getItem('preferredLanguage') || 'en';
+    const labelEl = document.querySelector('.captcha-group label');
+    const hintEl = document.querySelector('.captcha-hint');
+    const inputEl = document.getElementById('captchaInput');
+    if (labelEl) {
+      labelEl.innerText = lang === 'ne' ? 'सुरक्षा जाँच' : 'Security Check';
+    }
+    if (hintEl) {
+      hintEl.innerText = lang === 'ne' ? 'तपाईं मानव हुनुहुन्छ भनी प्रमाणित गर्न सरल गणित समस्या हल गर्नुहोस्।' : 'Solve the simple math problem to prove you are human.';
+    }
+    if (inputEl) {
+      inputEl.placeholder = lang === 'ne' ? 'जवाफ दिनुहोस्' : 'Enter answer';
+    }
+  }
+
+  function generateCaptcha() {
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
+    const operators = ['+', '-'];
+    const operator = operators[Math.floor(Math.random() * operators.length)];
+    let answer;
+    if (operator === '+') answer = num1 + num2;
+    else answer = num1 - num2;
+    if (answer < 0) return generateCaptcha();
+    currentCaptchaAnswer = answer;
+    const questionEl = document.getElementById('captchaQuestion');
+    if (questionEl) {
+      const lang = localStorage.getItem('preferredLanguage') || 'en';
+      if (lang === 'ne') {
+        questionEl.innerText = operator === '+' ? `${num1} + ${num2} को मान के हो?` : `${num1} - ${num2} को मान के हो?`;
+      } else {
+        questionEl.innerText = `What is ${num1} ${operator} ${num2}?`;
+      }
+    }
+    return answer;
+  }
+
+  function refreshCaptcha() {
+    generateCaptcha();
+    const input = document.getElementById('captchaInput');
+    if (input) input.value = '';
+  }
+
+  function validateCaptcha(e) {
+    const userAnswer = parseInt(document.getElementById('captchaInput').value, 10);
+    if (isNaN(userAnswer) || userAnswer !== currentCaptchaAnswer) {
+      e.preventDefault();
+      const msgDiv = document.getElementById('formMsg');
+      if (msgDiv) {
+        msgDiv.style.display = 'block';
+        msgDiv.style.color = '#ff6b6b';
+        const lang = localStorage.getItem('preferredLanguage') || 'en';
+        msgDiv.innerText = lang === 'ne' ? 'CAPTCHA प्रमाणीकरण असफल। कृपया पुन: प्रयास गर्नुहोस्।' : 'CAPTCHA verification failed. Please try again.';
+        setTimeout(() => { msgDiv.style.display = 'none'; }, 4000);
+      }
+      refreshCaptcha();
+      return false;
+    }
+    const btn = document.querySelector('#contactForm .form-submit');
+    if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
+    return true;
+  }
+
+  function attachCaptchaValidation() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+    form.removeEventListener('submit', validateCaptcha);
+    form.addEventListener('submit', validateCaptcha);
+  }
+
+  // Initialize
+  document.addEventListener('DOMContentLoaded', function() {
+    updateCaptchaLabels();
+    generateCaptcha();
+    const refreshBtn = document.getElementById('refreshCaptcha');
+    if (refreshBtn) refreshBtn.addEventListener('click', refreshCaptcha);
+    attachCaptchaValidation();
+  });
+
+  // Hook into language toggle
+  if (typeof window.translatePage === 'function') {
+    const originalTranslate = window.translatePage;
+    window.translatePage = function(lang) {
+      originalTranslate(lang);
+      updateCaptchaLabels();
+      generateCaptcha();
+    };
+  } else {
+    const langBtn = document.getElementById('langBtn');
+    if (langBtn) {
+      langBtn.addEventListener('click', function() {
+        setTimeout(() => {
+          updateCaptchaLabels();
+          generateCaptcha();
+        }, 50);
+      });
+    }
+  }
+})();
+</script>
+
 <script>
 const translations = {
   en: {
