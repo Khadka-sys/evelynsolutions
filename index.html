@@ -529,6 +529,18 @@
           </select>
         </div>
         <div class="form-group"><label data-i18n="formMessage">Tell us about your project</label><textarea name="message" placeholder="Describe your project, timeline and budget…" data-i18n-placeholder="formMessagePlaceholder"></textarea></div>
+
+        <!-- ⬇️ CAPTCHA SECTION (added here) ⬇️ -->
+        <div class="form-group captcha-group">
+          <label data-i18n="captchaLabel">Security Check</label>
+          <div class="captcha-container">
+            <span class="captcha-question" id="captchaQuestion"></span>
+            <input type="text" id="captchaInput" name="captcha" placeholder="Enter answer" class="captcha-input" autocomplete="off" required>
+            <button type="button" id="refreshCaptcha" class="captcha-refresh" aria-label="Refresh CAPTCHA">⟳</button>
+          </div>
+          <small class="captcha-hint" data-i18n="captchaHint">Solve the simple math problem to prove you are human.</small>
+        </div>
+
         <button type="submit" class="form-submit" data-i18n="formSubmit">Send enquiry →</button>
         <p class="form-msg" id="formMsg" data-i18n="formMsg">Thank you — we'll be in touch within 24 hours.</p>
       </form>
@@ -605,6 +617,85 @@
 </div>
 
 <script src="main.js"></script>
+
+<script>
+(function() {
+  let currentCaptchaAnswer = 0;
+
+  function updateCaptchaLabels() {
+    const lang = localStorage.getItem('preferredLanguage') || 'en';
+    const labelEl = document.querySelector('.captcha-group label');
+    const hintEl = document.querySelector('.captcha-hint');
+    const inputEl = document.getElementById('captchaInput');
+    if (labelEl) labelEl.innerText = lang === 'ne' ? 'सुरक्षा जाँच' : 'Security Check';
+    if (hintEl) hintEl.innerText = lang === 'ne' ? 'तपाईं मानव हुनुहुन्छ भनी प्रमाणित गर्न सरल गणित समस्या हल गर्नुहोस्।' : 'Solve the simple math problem to prove you are human.';
+    if (inputEl) inputEl.placeholder = lang === 'ne' ? 'जवाफ दिनुहोस्' : 'Enter answer';
+  }
+
+  function generateCaptcha() {
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
+    const op = Math.random() < 0.5 ? '+' : '-';
+    let answer = op === '+' ? num1 + num2 : num1 - num2;
+    if (answer < 0) return generateCaptcha();
+    currentCaptchaAnswer = answer;
+    const q = document.getElementById('captchaQuestion');
+    if (q) {
+      const lang = localStorage.getItem('preferredLanguage') || 'en';
+      if (lang === 'ne') q.innerText = op === '+' ? `${num1} + ${num2} को मान के हो?` : `${num1} - ${num2} को मान के हो?`;
+      else q.innerText = `What is ${num1} ${op} ${num2}?`;
+    }
+    return answer;
+  }
+
+  function refreshCaptcha() {
+    generateCaptcha();
+    const inp = document.getElementById('captchaInput');
+    if (inp) inp.value = '';
+  }
+
+  function validateCaptcha(e) {
+    const user = parseInt(document.getElementById('captchaInput')?.value, 10);
+    if (isNaN(user) || user !== currentCaptchaAnswer) {
+      e.preventDefault();
+      const msg = document.getElementById('formMsg');
+      if (msg) {
+        msg.style.display = 'block';
+        msg.style.color = '#ff6b6b';
+        const lang = localStorage.getItem('preferredLanguage') || 'en';
+        msg.innerText = lang === 'ne' ? 'CAPTCHA प्रमाणीकरण असफल। कृपया पुन: प्रयास गर्नुहोस्।' : 'CAPTCHA verification failed. Please try again.';
+        setTimeout(() => msg.style.display = 'none', 4000);
+      }
+      refreshCaptcha();
+      return false;
+    }
+    const btn = document.querySelector('#contactForm .form-submit');
+    if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
+    return true;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    updateCaptchaLabels();
+    generateCaptcha();
+    document.getElementById('refreshCaptcha')?.addEventListener('click', refreshCaptcha);
+    document.getElementById('contactForm')?.addEventListener('submit', validateCaptcha);
+  });
+
+  // Hook into language toggle
+  const orig = window.translatePage;
+  if (typeof orig === 'function') {
+    window.translatePage = function(lang) {
+      orig(lang);
+      updateCaptchaLabels();
+      generateCaptcha();
+    };
+  } else {
+    document.getElementById('langBtn')?.addEventListener('click', () => {
+      setTimeout(() => { updateCaptchaLabels(); generateCaptcha(); }, 50);
+    });
+  }
+})();
+</script>
 
 <script>
 // ============================================================
