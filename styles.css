@@ -1121,3 +1121,31 @@ body.light-mode .captcha-question {
   background: rgba(0,0,0,0.05);
   color: #1a1f2e;
 }
+
+/* ===== Interactive Features ===== */
+
+/* Glowing cursor */
+.cursor-glow {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(125,211,252,0.6), transparent);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, opacity 0.2s;
+  opacity: 0.7;
+}
+.cursor-glow.active {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, rgba(125,211,252,0.8), transparent);
+  opacity: 0.9;
+}
+
+/* Ensure cards have perspective for 3D tilt */
+.bento-cell, .svc-col, .testi-card, .step {
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+}

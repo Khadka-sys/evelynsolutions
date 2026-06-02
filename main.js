@@ -116,3 +116,113 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     link.classList.add('active');
   }
 });
+
+// ============================================
+// MODERN INTERACTIVE FEATURES – No External Dependencies
+// 3D Tilt | Gradient Mouse | Glow Cursor | Particles
+// ============================================
+(function() {
+  'use strict';
+
+  // 1. 3D Tilt Effect on Cards
+  const tiltCards = document.querySelectorAll('.bento-cell, .svc-col, .testi-card, .step');
+  tiltCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = (y - centerY) / 20;
+      const rotateY = (centerX - x) / 20;
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+    });
+    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+  });
+
+  // 2. Animated Gradient Background (Mouse-follow)
+  const hero = document.querySelector('.hero');
+  if (hero) {
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      hero.style.setProperty('--x', `${x}%`);
+      hero.style.setProperty('--y', `${y}%`);
+    });
+  }
+
+  // 3. Custom Glowing Cursor
+  const glow = document.createElement('div');
+  glow.className = 'cursor-glow';
+  document.body.appendChild(glow);
+  document.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  });
+  const interactive = document.querySelectorAll('a, button, .btn-dark, .btn-text, .nav-cta, .form-submit, .bento-cell, .svc-col');
+  interactive.forEach(el => {
+    el.addEventListener('mouseenter', () => glow.classList.add('active'));
+    el.addEventListener('mouseleave', () => glow.classList.remove('active'));
+  });
+
+  // 4. Floating Particles Canvas
+  const canvas = document.getElementById('particleCanvas');
+  if (canvas) {
+    let ctx = canvas.getContext('2d');
+    let particles = [];
+    let animationId = null;
+    let resizeTimeout;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      initParticles(Math.min(80, Math.floor(window.innerWidth / 20)));
+    }
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 1;
+        this.speedX = (Math.random() - 0.5) * 0.5;
+        this.speedY = (Math.random() - 0.5) * 0.3;
+        this.opacity = Math.random() * 0.3 + 0.1;
+      }
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0) this.x = canvas.width;
+        if (this.x > canvas.width) this.x = 0;
+        if (this.y < 0) this.y = canvas.height;
+        if (this.y > canvas.height) this.y = 0;
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(125, 211, 252, ${this.opacity})`;
+        ctx.fill();
+      }
+    }
+
+    function initParticles(count = 80) {
+      particles = [];
+      for (let i = 0; i < count; i++) particles.push(new Particle());
+    }
+
+    function animateParticles() {
+      if (!ctx) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let p of particles) { p.update(); p.draw(); }
+      animationId = requestAnimationFrame(animateParticles);
+    }
+
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => { resizeCanvas(); }, 150);
+    });
+    resizeCanvas();
+    animateParticles();
+    window.addEventListener('beforeunload', () => { if (animationId) cancelAnimationFrame(animationId); });
+  }
+})();
+
