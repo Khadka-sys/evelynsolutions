@@ -1042,3 +1042,23 @@ body.light-mode .tech-item {
   background: #e9ecef !important;
   color: #1a1f2e !important;
 }
+/* Improve visibility of eyebrow / small section labels */
+.hero-eyebrow,
+.eyebrow,
+.section-label,
+.page-hero-tag,
+.nsic-label {
+  color: #5bc0ff !important;   /* slightly deeper than --primary, more readable */
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+/* In light mode, use a darker blue for contrast */
+body.light-mode .hero-eyebrow,
+body.light-mode .eyebrow,
+body.light-mode .section-label,
+body.light-mode .page-hero-tag,
+body.light-mode .nsic-label {
+  color: #0a6e9e !important;   /* darker but still blue, visible on white */
+  text-shadow: none;
+}
