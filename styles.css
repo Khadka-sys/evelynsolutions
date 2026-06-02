@@ -1149,3 +1149,47 @@ body.light-mode .captcha-question {
   transform-style: preserve-3d;
   transition: transform 0.1s ease-out;
 }
+
+/* Ensure 3D canvas is behind hero text */
+#orb-canvas-container {
+  z-index: 1 !important;
+}
+.hero-left, .hero-right, .hero-actions, .hero-stats, .hero-badge {
+  z-index: 2;
+}
+
+/* Animated gradient text for all main headings */
+.hero-h1, .sec-h, .hero-h1 * , .sec-h * {
+  background: linear-gradient(135deg, #7dd3fc, #a0f0ff, #c8a0f0, #7dd3fc);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientShift 6s ease infinite;
+  transition: filter 0.3s;
+}
+/* Optional: add a subtle glow on hover */
+.hero-h1:hover, .sec-h:hover {
+  filter: drop-shadow(0 0 8px rgba(125,211,252,0.3));
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* For light mode: keep the gradient but adjust base colours */
+body.light-mode .hero-h1,
+body.light-mode .sec-h {
+  background: linear-gradient(135deg, #0a6e9e, #2b9eb3, #8a5cb0, #0a6e9e);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+/* Ensure nested elements (like <em>, <span>) inherit correctly */
+.hero-h1 em, .hero-h1 strong, .hero-h1 span,
+.sec-h em, .sec-h strong, .sec-h span {
+  background: inherit;
+  background-clip: inherit;
+  -webkit-background-clip: inherit;
+  color: inherit;
+}

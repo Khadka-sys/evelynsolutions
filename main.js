@@ -226,3 +226,139 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   }
 })();
 
+// ==================== MODERN INTERACTIVE FEATURES ====================
+
+// 1. 3D Tilt Effect for Cards (no duplicates)
+const tiltCards = document.querySelectorAll('.bento-cell, .svc-col, .testi-card, .step');
+tiltCards.forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = (y - centerY) / 20;
+    const rotateY = (centerX - x) / 20;
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
+// 2. Custom Glowing Cursor (single instance)
+const glowCursor = document.createElement('div');
+glowCursor.className = 'cursor-glow';
+document.body.appendChild(glowCursor);
+
+document.addEventListener('mousemove', (e) => {
+  glowCursor.style.left = e.clientX + 'px';
+  glowCursor.style.top = e.clientY + 'px';
+});
+
+const interactiveElements = document.querySelectorAll('a, button, .btn-dark, .btn-text, .nav-cta, .form-submit, .bento-cell, .svc-col');
+interactiveElements.forEach(el => {
+  el.addEventListener('mouseenter', () => glowCursor.classList.add('active'));
+  el.addEventListener('mouseleave', () => glowCursor.classList.remove('active'));
+});
+
+// 3. Animated Gradient Background (mouse‑follow) – only if .hero exists
+const heroSection = document.querySelector('.hero');
+if (heroSection) {
+  document.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth) * 100;
+    const y = (e.clientY / window.innerHeight) * 100;
+    heroSection.style.setProperty('--x', `${x}%`);
+    heroSection.style.setProperty('--y', `${y}%`);
+  });
+}
+
+// 4. Floating Particles Canvas (only if the canvas element exists)
+const particleCanvas = document.getElementById('particleCanvas');
+if (particleCanvas) {
+  let ctx = particleCanvas.getContext('2d');
+  let particles = [];
+  let animationId = null;
+  let resizeTimeout;
+
+  function resizeParticleCanvas() {
+    particleCanvas.width = window.innerWidth;
+    particleCanvas.height = window.innerHeight;
+    initParticles(Math.min(80, Math.floor(window.innerWidth / 20)));
+  }
+
+  class Particle {
+    constructor() {
+      this.x = Math.random() * particleCanvas.width;
+      this.y = Math.random() * particleCanvas.height;
+      this.size = Math.random() * 2 + 1;
+      this.speedX = (Math.random() - 0.5) * 0.5;
+      this.speedY = (Math.random() - 0.5) * 0.3;
+      this.opacity = Math.random() * 0.3 + 0.1;
+    }
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      if (this.x < 0) this.x = particleCanvas.width;
+      if (this.x > particleCanvas.width) this.x = 0;
+      if (this.y < 0) this.y = particleCanvas.height;
+      if (this.y > particleCanvas.height) this.y = 0;
+    }
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(125, 211, 252, ${this.opacity})`;
+      ctx.fill();
+    }
+  }
+
+  function initParticles(count) {
+    particles = [];
+    for (let i = 0; i < count; i++) particles.push(new Particle());
+  }
+
+  function animateParticles() {
+    if (!ctx) return;
+    ctx.clearRect(0, 0, particleCanvas.width, particleCanvas.height);
+    for (let p of particles) {
+      p.update();
+      p.draw();
+    }
+    animationId = requestAnimationFrame(animateParticles);
+  }
+
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => resizeParticleCanvas(), 150);
+  });
+  resizeParticleCanvas();
+  animateParticles();
+  window.addEventListener('beforeunload', () => {
+    if (animationId) cancelAnimationFrame(animationId);
+  });
+}
+
+// Dynamic gradient shift based on scroll and mouse position
+(function() {
+  const headings = document.querySelectorAll('.hero-h1, .sec-h');
+  if (!headings.length) return;
+
+  function updateGradientPosition() {
+    const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+    const mouseX = (mouseXposition / window.innerWidth) || 0.5;
+    // Combine scroll (vertical) and mouse (horizontal) for a dynamic shift
+    const shiftX = 30 + (mouseX * 40); // 30% to 70%
+    const shiftY = 30 + (scrollPercent * 40); // 30% to 70%
+    headings.forEach(heading => {
+      heading.style.backgroundPosition = `${shiftX}% ${shiftY}%`;
+    });
+  }
+
+  let mouseXposition = 0.5;
+  window.addEventListener('mousemove', (e) => {
+    mouseXposition = e.clientX / window.innerWidth;
+    updateGradientPosition();
+  });
+  window.addEventListener('scroll', updateGradientPosition);
+  updateGradientPosition();
+})();
